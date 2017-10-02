@@ -1,0 +1,44 @@
+/**
+ * Breakpoint mixin (new version)
+ *
+ * 1) Can be used with or without direction. Eg:
+ *   @include breakpoint(md) { ... } // 'medium only'
+ *   @include breakpoint(lg up) { ... } // 'large up'
+ */
+
+@mixin breakpoint($val, $type: "") {
+  $scope: if(length($val) > 1, nth($val, 2), only); /* [1] */
+  $size: nth($val, 1);
+
+  @if $size == xxs and $scope == only {
+    @media only screen and ( max-width: $screen-xxs-max ) { @content; }
+  } @else if $size == xs and $scope == down {
+    @media only screen and ( max-width: $screen-xs-max ) { @content; }
+  } @else if $size == xs and $scope == only {
+    @media only screen and ( min-width: $screen-xs-min) and ( max-width: $screen-xs-max ) { @content; }
+  } @else if $size == xs and $scope == up {
+    @media only screen and ( min-width: $screen-xs-min) { @content; }
+  } @else if $size == sm and $scope == down {
+    @media only screen and ( max-width: $screen-sm-max ) { @content; }
+  } @else if $size == sm and $scope == only {
+    @media only screen and ( min-width: $screen-sm-min) and ( max-width: $screen-sm-max ) { @content; }
+  } @else if $size == sm and $scope == up {
+    @media only screen and ( min-width: $screen-sm-min) { @content; }
+  } @else if $size == md and $scope == down {
+    @media only screen and ( max-width: $screen-md-max ) { @content; }
+  } @else if $size == md and $scope == only {
+    @media only screen and ( min-width: $screen-md-min) and ( max-width: $screen-md-max ) { @content; }
+  } @else if $size == md and $scope == up {
+    @media only screen and ( min-width: $screen-md-min) { @content; }
+  } @else if $size == lg and $scope == down {
+    @media only screen and ( max-width: $screen-lg-max ) { @content; }
+  } @else if $size == lg and $scope == only {
+    @media only screen and ( min-width: $screen-lg-min) and ( max-width: $screen-lg-max ) { @content; }
+  } @else if $size == lg and $scope == up {
+    @media only screen and ( min-width: $screen-lg-min) { @content; }
+  } @else if $size == xl and ($scope == only or $scope == up) {
+    @media only screen and ( min-width: $screen-xl-min) { @content; }
+  } @else {
+    @error "The value `" + $val + "` is unexpected, the breakpoint mixin does not know how to handle this.";
+  }
+}

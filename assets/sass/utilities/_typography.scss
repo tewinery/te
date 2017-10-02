@@ -1,0 +1,16 @@
+.u_h0 { @include h0(); }
+.u_h1 { @include h1(); }
+.u_h2 { @include h2(); }
+.u_h3 { @include h3(); }
+.u_h4 { @include h4(); }
+.u_h5 { @include h5(); }
+.u_h6 { @include h6(); }
+
+.u_fs--h0 { @include h0($font-size-only: true); }
+.u_fs--h1 { @include h1($font-size-only: true); }
+.u_fs--h2 { @include h2($font-size-only: true); }
+.u_fs--h3 { @include h3($font-size-only: true); }
+.u_fs--h4 { @include h4($font-size-only: true); }
+.u_fs--h5 { @include h5($font-size-only: true); }
+.u_fs--h6 { @include h6($font-size-only: true); }
+.u_fs--body { font-size: $body-font-size !important; }

@@ -1,0 +1,16 @@
+$my-inline-block-fix: 4px;
+$my-base-spacing: 20px;
+
+
+$my-spacing: (
+  'tiny'           :       $my-base-spacing / 4,    // 5px
+  'small'          :       $my-base-spacing / 2,    // 10px
+  'medium-small'   :       $my-base-spacing / 1.33, // 15px
+  'medium'         :       $my-base-spacing,        // 20px
+  'medium-large'   :       $my-base-spacing * 1.5,  // 30px
+  'large'          :       $my-base-spacing * 2,    // 40px
+  'xlarge'         :       $my-base-spacing * 3,    // 60px
+  'xxlarge'        :       $my-base-spacing * 4,    // 80px
+  'xxxlarge'       :       $my-base-spacing * 6,    // 120px
+  'huge'           :       $my-base-spacing * 8,    // 160px
+);

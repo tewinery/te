@@ -1,0 +1,52 @@
+.c_slide {
+  color: my-color(greyscale, white);
+  background-color: my-color(greyscale, tuatara);
+}
+
+
+  .c_slide__bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: opacity 500ms ease;
+
+    .c_slide--tea-fields & { background-image: url("/img/bg/tea-fields.jpg"); }
+    .c_slide--glass1 & { background-image: url("/img/bg/glass1.jpg"); }
+    .c_slide--grapes & { background-image: url("/img/bg/grapes.jpg"); }
+
+    // reverse the order, first on top last at bottom
+    $slideCount: 10;
+
+    @for $i from 1 through $slideCount {
+      .c_slide:nth-child(#{$i}) & { z-index: $slideCount - $i; }
+    }
+
+    .c_slide.is-hidden & {
+      opacity: 0;
+    }
+
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(my-color(greyscale, black), 0.75);
+      z-index: my-z-index(grass);
+    }
+  }
+
+
+  .c_slide__main {
+    position: relative;
+    z-index: my-z-index(flower);
+    margin: 0 auto;
+    z-index: my-z-index(bungalow);
+  }

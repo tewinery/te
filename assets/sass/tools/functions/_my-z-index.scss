@@ -1,0 +1,12 @@
+/**
+ * My z-index function
+ *
+ * This function allows us to easily grab z-index to apply to elements as and
+ *  when needed.
+ *
+ * Uses z-index settings set in settings/_z-index.scss.
+ */
+
+@function my-z-index($name) {
+    @return map-get($my-z-index, $name);
+}
