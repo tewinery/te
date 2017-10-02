@@ -25,9 +25,9 @@
 
 @font-face {
   font-family: 'Ashbury Light';
-  src: url("/fonts/AshburyLig-webfont.eot");
+  src: url(/fonts/AshburyLig-webfont.eot?bc07fa7aef6c3c9ddf3f6e6972d10843);
   /* IE9 Compat Modes */
-  src: url("/fonts/AshburyLig-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/AshburyLig-webfont.woff2") format("woff2"), url("/fonts/AshburyLig-webfont.woff") format("woff"), url("/fonts/AshburyLig-webfont.ttf") format("truetype"), url("/fonts/AshburyLig-webfont.svg#svgFontName") format("svg");
+  src: url(/fonts/AshburyLig-webfont.eot?bc07fa7aef6c3c9ddf3f6e6972d10843?#iefix) format("embedded-opentype"), url(/fonts/AshburyLig-webfont.woff2?1b54df1e1c11552edbd7fcd5350c574a) format("woff2"), url(/fonts/AshburyLig-webfont.woff?8d087c7f79a7750303e27d3b5ef9021b) format("woff"), url(/fonts/AshburyLig-webfont.ttf?81a83152dfdc0cbe77ee2e945a2ec927) format("truetype"), url(/fonts/AshburyLig-webfont.svg?623a73577a8fe3474bb8f49f13f3a3a4#svgFontName) format("svg");
   /* Legacy iOS */
 }
 
