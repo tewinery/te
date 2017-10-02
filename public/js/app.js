@@ -68,14 +68,14 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var lodash = __webpack_require__(12);
+var lodash = __webpack_require__(2);
 
 $(function () {
    $(document).on('scroll', _.throttle(function () {
@@ -109,21 +109,6 @@ $(function () {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: dyld: Library not loaded: /usr/local/opt/libpng/lib/libpng16.16.dylib\n  Referenced from: /Users/fredrivett/code/te/node_modules/mozjpeg/vendor/cjpeg\n  Reason: Incompatible library version: cjpeg requires version 36.0.0 or later, but libpng16.16.dylib provides version 33.0.0\n\n    at Promise.all.then.arr (/Users/fredrivett/code/te/node_modules/execa/index.js:231:11)\n    at process._tickCallback (internal/process/next_tick.js:103:7)\n    at runLoaders (/Users/fredrivett/code/te/node_modules/webpack/lib/NormalModule.js:194:19)\n    at /Users/fredrivett/code/te/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/fredrivett/code/te/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/fredrivett/code/te/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at /Users/fredrivett/code/te/node_modules/img-loader/index.js:45:31");
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -17212,10 +17197,10 @@ throw new Error("Module build failed: ModuleBuildError: Module build failed: Err
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13), __webpack_require__(14)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(4)(module)))
 
 /***/ }),
-/* 13 */
+/* 3 */
 /***/ (function(module, exports) {
 
 var g;
@@ -17242,7 +17227,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 14 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -17268,6 +17253,12 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
