@@ -11,18 +11,18 @@
 
 $display-font-family: "Ashbury Light", "Open sans";
 $websafe-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font-family: "Lato", $websafe-font-family;
+$body-font-family: $display-font-family, $websafe-font-family;
 
 
 
 
 $my-font-sizes: (
-  h0: ( small: 42px, large: 79px ),
+  h0: ( small: 72px, large: 94px ),
   h1: ( small: 34px, large: 64px ),
   h2: ( small: 27px, large: 45px ),
-  h3: ( small: 22px, large: 32px ),
-  h4: ( small: 18px, large: 23px ),
-  h5: ( small: 16px, large: 18px ),
+  h3: ( small: 22px, large: 33px ),
+  h4: ( small: 18px, large: 28px ),
+  h5: ( small: 16px, large: 23px ),
   h6: ( small: 14px, large: 16px ),
   tiny: 8px,
 );

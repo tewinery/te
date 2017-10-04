@@ -1,4 +1,5 @@
 .c_slide {
+  position: relative;
   color: my-color(greyscale, white);
   background-color: my-color(greyscale, tuatara);
 }
@@ -16,9 +17,17 @@
     background-attachment: fixed;
     transition: opacity 500ms ease;
 
-    .c_slide--tea-fields & { background-image: url("../img/bg/tea-fields.jpg"); }
-    .c_slide--glass1 & { background-image: url("../img/bg/glass1.jpg"); }
-    .c_slide--grapes & { background-image: url("../img/bg/grapes.jpg"); }
+    $slides: tea-fields1 tea-fields2 tea-burnt tea-picker metal-building glass1 glass2 glass3 glass4 lockers grapes restaurant1 restaurant2;
+
+    @each $slide in $slides {
+      .c_slide--#{$slide} & { background-image: url("../img/bg/#{$slide}.jpg"); }
+    }
+
+    .c_slide--restaurant1 & {
+      &::after {
+        background-color: rgba(my-color(greyscale, black), 0.3);
+      }
+    }
 
     // reverse the order, first on top last at bottom
     $slideCount: 10;
@@ -38,8 +47,12 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: rgba(my-color(greyscale, black), 0.75);
+      background-color: rgba(my-color(greyscale, black), 0.5);
       z-index: my-z-index(grass);
+
+      .c_slide--lockers & {
+        background-color: rgba(my-color(greyscale, black), 0.55);
+      }
     }
   }
 
@@ -49,4 +62,22 @@
     z-index: my-z-index(flower);
     margin: 0 auto;
     z-index: my-z-index(bungalow);
+  }
+
+
+  .c_slide__arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: my-color(greyscale, white);
+    z-index: my-z-index(tower-block);
+    text-align: center;
+    transition: all 250ms ease;
+    padding: my-spacing(medium) 0;
+  }
+
+  .c_slide__arrow--up {
+    bottom: auto;
+    top: 0;
   }

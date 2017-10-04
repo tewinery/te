@@ -78,13 +78,17 @@ module.exports = __webpack_require__(5);
 var lodash = __webpack_require__(2);
 
 $(function () {
+   changeSlideBg(); // onload
+
    $(document).on('scroll', _.throttle(function () {
+      changeSlideBg();
+   }, 300));
+
+   function changeSlideBg() {
       var pixelsFromWindowBottomToBottom = 0 + $(document).height() - $(window).scrollTop() - $(window).height();
       var middleScrollTop = $(window).height() / 2 + $(window).scrollTop();
-      //console.log(middleScrollTop);
       var $slides = $(".js_slide");
-      //console.log($slides);
-      slideNum = null;
+      var slideNum = null;
       var i = 0;
 
       $slides.each(function (index) {
@@ -102,9 +106,21 @@ $(function () {
 
       $slides.addClass("is-hidden");
       $slides.eq(slideNum).removeClass("is-hidden");
+   }
+});
 
-      console.log(slideNum);
-   }, 300));
+// slide to section functionality
+$('a[href*="#"]:not([href="#"])').click(function () {
+   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+         $('html, body').animate({
+            scrollTop: target.offset().top
+         }, 500);
+         return false;
+      }
+   }
 });
 
 /***/ }),

@@ -6,7 +6,7 @@
 @import "settings/z-index";
 
 
-// TOOLS: MIXINS
+// TOOLS: FUNCTIONS
 @import "tools/functions/my-spacing";
 @import "tools/functions/my-font-size";
 @import "tools/functions/my-color";
@@ -20,9 +20,11 @@
 // TOOLS: MIXINS
 @import "tools/mixins/breakpoint";
 @import "tools/mixins/h0-h6";
+@import "tools/mixins/placeholder";
 
 
 // BASE
+@import "base/form";
 @import "base/typography";
 
 
@@ -33,7 +35,10 @@
 
 // COMPONENTS
 @import "components/slide";
+@import "components/dictionary";
+@import "components/signup-form";
 
 
 // UTILITIES
 @import "utilities/typography";
+@import "utilities/spacing";

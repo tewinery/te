@@ -7802,11 +7802,15 @@ button.close {
  *   @include breakpoint(md) { ... } // 'medium only'
  *   @include breakpoint(lg up) { ... } // 'large up'
  */
+input {
+  border-width: 1px;
+}
+
 /**
  * Override bootstrap defaults
  */
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ashbury Light", "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #FFFFFF;
 }
@@ -7825,6 +7829,7 @@ h1 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 34px;
   /* [1] */
 }
@@ -7839,6 +7844,7 @@ h2 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 27px;
   line-height: 1.2;
   /* [1] */
@@ -7854,6 +7860,7 @@ h3 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 22px;
   line-height: 1.2;
   /* [1] */
@@ -7861,7 +7868,7 @@ h3 {
 
 @media only screen and (min-width: 768px) {
   h3 {
-    font-size: 32px;
+    font-size: 33px;
   }
 }
 
@@ -7869,13 +7876,14 @@ h4 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 18px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   h4 {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 
@@ -7883,13 +7891,14 @@ h5 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 16px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   h5 {
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 
@@ -7897,6 +7906,7 @@ h6 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 14px;
   /* [1] */
 }
@@ -7909,6 +7919,11 @@ h6 {
 
 p {
   margin-top: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
 /**
@@ -8092,6 +8107,7 @@ p {
 }
 
 .c_slide {
+  position: relative;
   color: #FFFFFF;
   background-color: #413A35;
 }
@@ -8110,16 +8126,60 @@ p {
   transition: opacity 500ms ease;
 }
 
-.c_slide--tea-fields .c_slide__bg {
-  background-image: url("../img/bg/tea-fields.jpg");
+.c_slide--tea-fields1 .c_slide__bg {
+  background-image: url("../img/bg/tea-fields1.jpg");
+}
+
+.c_slide--tea-fields2 .c_slide__bg {
+  background-image: url("../img/bg/tea-fields2.jpg");
+}
+
+.c_slide--tea-burnt .c_slide__bg {
+  background-image: url("../img/bg/tea-burnt.jpg");
+}
+
+.c_slide--tea-picker .c_slide__bg {
+  background-image: url("../img/bg/tea-picker.jpg");
+}
+
+.c_slide--metal-building .c_slide__bg {
+  background-image: url("../img/bg/metal-building.jpg");
 }
 
 .c_slide--glass1 .c_slide__bg {
   background-image: url("../img/bg/glass1.jpg");
 }
 
+.c_slide--glass2 .c_slide__bg {
+  background-image: url("../img/bg/glass2.jpg");
+}
+
+.c_slide--glass3 .c_slide__bg {
+  background-image: url("../img/bg/glass3.jpg");
+}
+
+.c_slide--glass4 .c_slide__bg {
+  background-image: url("../img/bg/glass4.jpg");
+}
+
+.c_slide--lockers .c_slide__bg {
+  background-image: url("../img/bg/lockers.jpg");
+}
+
 .c_slide--grapes .c_slide__bg {
   background-image: url("../img/bg/grapes.jpg");
+}
+
+.c_slide--restaurant1 .c_slide__bg {
+  background-image: url("../img/bg/restaurant1.jpg");
+}
+
+.c_slide--restaurant2 .c_slide__bg {
+  background-image: url("../img/bg/restaurant2.jpg");
+}
+
+.c_slide--restaurant1 .c_slide__bg::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .c_slide:nth-child(1) .c_slide__bg {
@@ -8173,8 +8233,12 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.c_slide--lockers .c_slide__bg::after {
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .c_slide__main {
@@ -8184,17 +8248,289 @@ p {
   z-index: 100;
 }
 
+.c_slide__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #FFFFFF;
+  z-index: 500;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  padding: 20px 0;
+}
+
+.c_slide__arrow--up {
+  bottom: auto;
+  top: 0;
+}
+
+.c_dictionary {
+  margin-bottom: 0;
+}
+
+.c_dictionary__word {
+  font-family: "Ashbury Light", "Open sans";
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 72px;
+  /* [1] */
+  line-height: 1;
+  letter-spacing: 0;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .c_dictionary__word {
+    font-size: 94px;
+  }
+}
+
+.c_dictionary__meta {
+  display: block;
+  font-family: "Ashbury Light", "Open sans";
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  line-height: 1.2;
+  /* [1] */
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .c_dictionary__meta {
+    font-size: 33px;
+  }
+}
+
+.c_dictionary__grammar {
+  font-family: "Ashbury Light", "Open sans";
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  /* [1] */
+}
+
+@media only screen and (min-width: 768px) {
+  .c_dictionary__grammar {
+    font-size: 28px;
+  }
+}
+
+.c_dictionary__definition {
+  font-family: "Ashbury Light", "Open sans";
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  /* [1] */
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .c_dictionary__definition {
+    font-size: 23px;
+  }
+}
+
+ol {
+  padding-left: 2em;
+  list-style-type: disc;
+}
+
+.c_dictionary__definition > li {
+  position: relative;
+}
+
+.c_dictionary__definition > li::before {
+  counter-increment: li;
+  position: absolute;
+  left: -0.4em;
+  width: 1em;
+  font-weight: bold;
+}
+
+.c_dictionary__bullet::before {
+  text-align: right;
+}
+
+.c_dictionary__bullet--a,
+.c_dictionary__bullet--t,
+.c_dictionary__bullet--e {
+  padding-left: 1em;
+  margin-left: -1em;
+  list-style-type: none;
+}
+
+.c_dictionary__bullet--a::before {
+  content: "a:";
+}
+
+.c_dictionary__bullet--t::before {
+  content: "t:";
+}
+
+.c_dictionary__bullet--e::before {
+  content: "e:";
+}
+
+.c_signup-form__label {
+  font-family: "Ashbury Light", "Open sans";
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  /* [1] */
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .c_signup-form__label {
+    font-size: 23px;
+  }
+}
+
+.c_signup-form__form {
+  font-size: 16px;
+  color: #FFFFFF;
+  max-width: 400px;
+  margin: 0 auto;
+  /* [1] */
+}
+
+@media only screen and (min-width: 992px) {
+  .c_signup-form__form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.c_signup-form__input,
+.c_signup-form__button {
+  height: 41px;
+  text-align: center;
+  /* [1] */
+}
+
+@media only screen and (max-width: 991px) {
+  .c_signup-form__input,
+  .c_signup-form__button {
+    width: 100%;
+  }
+}
+
+.c_signup-form__input {
+  /* Chrome/Opera/Safari */
+  /* Firefox 19+ */
+  /* IE 10+ */
+  /* Firefox 18- */
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all my-transition-speed(medium-slow) ease !important;
+  transition: all my-transition-speed(medium-slow) ease !important;
+  background-color: rgba(62, 56, 49, 0);
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  border-color: rgba(255, 255, 255, 0.3);
+  /* [1] */
+  /* [1] */
+}
+
+.c_signup-form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.c_signup-form__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.c_signup-form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.c_signup-form__input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.c_signup-form__input, .c_signup-form__input:focus {
+  border-style: solid;
+}
+
+.c_signup-form__input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  font-weight: bold;
+  outline: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .c_signup-form__input {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .c_signup-form__input {
+    margin-bottom: 0;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+  }
+}
+
+.c_signup-form__button {
+  margin: 0;
+  font-size: 16px;
+  background-color: #251e17;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 1px;
+  margin-left: -1px;
+  /* [1] */
+}
+
+@media only screen and (min-width: 992px) {
+  .c_signup-form__button {
+    border-radius: 1000px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.c_signup-form__button:hover, .c_signup-form__button:focus, .c_signup-form__button:active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  outline: none !important;
+}
+
 .u_h0 {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  font-size: 42px;
+  letter-spacing: 0.05em;
+  font-size: 72px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   .u_h0 {
-    font-size: 79px;
+    font-size: 94px;
   }
 }
 
@@ -8202,6 +8538,7 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 34px;
   /* [1] */
 }
@@ -8216,6 +8553,7 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 27px;
   line-height: 1.2;
   /* [1] */
@@ -8231,6 +8569,7 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 22px;
   line-height: 1.2;
   /* [1] */
@@ -8238,7 +8577,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .u_h3 {
-    font-size: 32px;
+    font-size: 33px;
   }
 }
 
@@ -8246,13 +8585,14 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 18px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   .u_h4 {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 
@@ -8260,13 +8600,14 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 16px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   .u_h5 {
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 
@@ -8274,6 +8615,7 @@ p {
   font-family: "Ashbury Light", "Open sans";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
   font-size: 14px;
   /* [1] */
 }
@@ -8285,13 +8627,13 @@ p {
 }
 
 .u_fs--h0 {
-  font-size: 42px;
+  font-size: 72px;
   /* [1] */
 }
 
 @media only screen and (min-width: 768px) {
   .u_fs--h0 {
-    font-size: 79px;
+    font-size: 94px;
   }
 }
 
@@ -8326,7 +8668,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .u_fs--h3 {
-    font-size: 32px;
+    font-size: 33px;
   }
 }
 
@@ -8337,7 +8679,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .u_fs--h4 {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 
@@ -8348,7 +8690,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .u_fs--h5 {
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 
@@ -8365,4 +8707,12 @@ p {
 
 .u_fs--body {
   font-size: 16px !important;
+}
+
+.u_no-margin--inner > :first-child {
+  margin-top: 0px !important;
+}
+
+.u_no-margin--inner > :last-child {
+  margin-bottom: 0px !important;
 }
