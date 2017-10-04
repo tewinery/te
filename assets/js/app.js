@@ -3,6 +3,10 @@ var lodash = require('lodash');
 $(function() {
    changeSlideBg(); // onload
 
+   setTimeout(function(){
+      $(".js_slide").addClass("with-transition");
+   }, 3000);
+
    $(document).on('scroll', _.throttle(() => {
       changeSlideBg();
    }, 300));

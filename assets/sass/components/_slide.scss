@@ -43,6 +43,10 @@
       opacity: 0;
     }
 
+    .c_slide.with-transition & {
+      transition: all 500ms ease;
+    }
+
     &::after {
       content: '';
       position: fixed;

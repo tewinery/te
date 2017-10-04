@@ -80,6 +80,10 @@ var lodash = __webpack_require__(2);
 $(function () {
    changeSlideBg(); // onload
 
+   setTimeout(function () {
+      $(".js_slide").addClass("with-transition");
+   }, 3000);
+
    $(document).on('scroll', _.throttle(function () {
       changeSlideBg();
    }, 300));

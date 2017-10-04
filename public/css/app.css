@@ -8236,6 +8236,11 @@ a, a:hover, a:active, a:focus {
   opacity: 0;
 }
 
+.c_slide.with-transition .c_slide__bg {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
 .c_slide__bg::after {
   content: '';
   position: fixed;
