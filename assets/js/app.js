@@ -14,7 +14,7 @@ $(function() {
    function changeSlideBg() {
       var pixelsFromWindowBottomToBottom = 0 + $(document).height() - $(window).scrollTop() - $(window).height();
       var middleScrollTop = $(window).height() / 2 + $(window).scrollTop();
-      var $slides = $(".js_slide");
+      var $slides = $(".js_slide-container");
       var slideNum = null;
       var i = 0;
 
@@ -34,6 +34,20 @@ $(function() {
       $slides.addClass("is-hidden");
       $slides.eq(slideNum).removeClass("is-hidden");
    }
+
+   $(".js_slide__arrow--left").click(function(e) {
+      e.preventDefault();
+      var $slideCont = $(this).closest(".js_slide-container");
+      var slideContCurrent = parseFloat($slideCont.attr('data-slide'));
+      $slideCont.attr('data-slide', slideContCurrent - 1);
+   });
+
+   $(".js_slide__arrow--right").click(function(e) {
+      e.preventDefault();
+      var $slideCont = $(this).closest(".js_slide-container");
+      var slideContCurrent = parseFloat($slideCont.attr('data-slide'));
+      $slideCont.attr('data-slide', slideContCurrent + 1);
+   });
 });
 
 

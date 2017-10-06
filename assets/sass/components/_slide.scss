@@ -1,7 +1,59 @@
-.c_slide {
+.c_slide-container {
   position: relative;
+}
+
+
+.c_slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   color: my-color(greyscale, white);
   background-color: my-color(greyscale, tuatara);
+  transition: all 500ms ease;
+
+  .c_slide-container[data-slide="0"] &[data-slide-pos="-1"],
+  .c_slide-container[data-slide="1"] &[data-slide-pos="-1"] {
+    .c_slide__main {
+      transform: translateX(-100%);
+    }
+
+    .c_slide__bg {
+      opacity: 0;
+    }
+  }
+
+  .c_slide-container[data-slide="-1"] &[data-slide-pos="0"] {
+    .c_slide__main {
+      transform: translateX(100%);
+    }
+
+    .c_slide__bg {
+      opacity: 0;
+    }
+  }
+
+  .c_slide-container[data-slide="1"] &[data-slide-pos="0"] {
+    .c_slide__main {
+      transform: translateX(-100%);
+    }
+
+    .c_slide__bg {
+      opacity: 0;
+    }
+  }
+
+  .c_slide-container[data-slide="-1"] &[data-slide-pos="1"],
+  .c_slide-container[data-slide="0"] &[data-slide-pos="1"] {
+    .c_slide__main {
+      transform: translateX(100%);
+    }
+
+    .c_slide__bg {
+      opacity: 0;
+    }
+  }
 }
 
 
@@ -20,13 +72,13 @@
       background-attachment: fixed;
     }
 
-    $slides: tea-fields1 tea-fields2 tea-burnt tea-picker metal-building glass1 glass2 glass3 glass4 lockers grapes restaurant1 restaurant2;
+    $slides: brewery tea-box tea-fields1 tea-fields2 tea-burnt tea-picker metal-building glass1 glass2 glass3 glass4 lockers grapes mary restaurant1 restaurant2 we-care;
 
     @each $slide in $slides {
       .c_slide--#{$slide} & { background-image: url("../img/bg/#{$slide}.jpg"); }
     }
 
-    .c_slide--restaurant1 & {
+    .c_slide--wine-box & {
       &::after {
         background-color: rgba(my-color(greyscale, black), 0.3);
       }
@@ -36,10 +88,10 @@
     $slideCount: 10;
 
     @for $i from 1 through $slideCount {
-      .c_slide:nth-child(#{$i}) & { z-index: $slideCount - $i; }
+      .c_slide-container:nth-child(#{$i}) & { z-index: $slideCount - $i; }
     }
 
-    .c_slide.is-hidden & {
+    .c_slide-container.is-hidden & {
       opacity: 0;
     }
 
@@ -69,6 +121,7 @@
     margin: 0 auto;
     z-index: my-z-index(bungalow);
     width: 100%;
+    transition: all 500ms ease;
   }
 
 
@@ -77,14 +130,32 @@
     right: 0;
     bottom: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: my-color(greyscale, white);
     z-index: my-z-index(tower-block);
-    text-align: center;
     transition: all 250ms ease;
-    padding: my-spacing(medium) 0;
+    padding: my-spacing(medium);
   }
 
-  .c_slide__arrow--up {
-    bottom: auto;
+  .c_slide__arrow--top {
     top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+  }
+
+  .c_slide__arrow--left {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .c_slide__arrow--right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
   }
