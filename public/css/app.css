@@ -7802,11 +7802,6 @@ button.close {
  *   @include breakpoint(md) { ... } // 'medium only'
  *   @include breakpoint(lg up) { ... } // 'large up'
  */
-.container {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
 input {
   border-width: 1px;
 }
@@ -8325,6 +8320,7 @@ a, a:hover, a:active, a:focus {
 
 .c_slide__main {
   position: relative;
+  padding: 40px;
   margin: 0 auto;
   z-index: 100;
   width: 100%;
@@ -8351,6 +8347,16 @@ a, a:hover, a:active, a:focus {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   padding: 20px;
+}
+
+.c_slide__arrow .fa {
+  /* [1] */
+}
+
+@media only screen and (max-width: 991px) {
+  .c_slide__arrow .fa {
+    font-size: 2.5em;
+  }
 }
 
 .c_slide__arrow--top {

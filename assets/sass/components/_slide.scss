@@ -118,6 +118,7 @@
 
   .c_slide__main {
     position: relative;
+    padding: my-spacing(large);
     margin: 0 auto;
     z-index: my-z-index(bungalow);
     width: 100%;
@@ -137,6 +138,12 @@
     z-index: my-z-index(tower-block);
     transition: all 250ms ease;
     padding: my-spacing(medium);
+
+    .fa {
+      @include breakpoint (sm down) {
+        font-size: 2.5em;
+      }
+    }
   }
 
   .c_slide__arrow--top {
