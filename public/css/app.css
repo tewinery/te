@@ -8109,6 +8109,8 @@ a, a:hover, a:active, a:focus {
 
 .c_slide-container {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .c_slide {
@@ -8244,6 +8246,10 @@ a, a:hover, a:active, a:focus {
 
 .c_slide--restaurant2 .c_slide__bg {
   background-image: url("../img/bg/restaurant2.jpg");
+}
+
+.c_slide--restaurant3 .c_slide__bg {
+  background-image: url("../img/bg/restaurant3.jpg");
 }
 
 .c_slide--we-care .c_slide__bg {
