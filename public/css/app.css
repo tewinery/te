@@ -8188,6 +8188,10 @@ a, a:hover, a:active, a:focus {
   background-image: url("../img/bg/brewery.jpg");
 }
 
+.c_slide--bulb .c_slide__bg {
+  background-image: url("../img/bg/bulb.jpg");
+}
+
 .c_slide--tea-box .c_slide__bg {
   background-image: url("../img/bg/tea-box.jpg");
 }
@@ -8206,6 +8210,10 @@ a, a:hover, a:active, a:focus {
 
 .c_slide--tea-picker .c_slide__bg {
   background-image: url("../img/bg/tea-picker.jpg");
+}
+
+.c_slide--tea-picker2 .c_slide__bg {
+  background-image: url("../img/bg/tea-picker2.jpg");
 }
 
 .c_slide--metal-building .c_slide__bg {

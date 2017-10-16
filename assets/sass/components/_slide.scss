@@ -74,7 +74,7 @@
       background-attachment: fixed;
     }
 
-    $slides: brewery tea-box tea-fields1 tea-fields2 tea-burnt tea-picker metal-building glass1 glass2 glass3 glass4 lockers grapes mary restaurant1 restaurant2 restaurant3 we-care;
+    $slides: brewery bulb tea-box tea-fields1 tea-fields2 tea-burnt tea-picker tea-picker2 metal-building glass1 glass2 glass3 glass4 lockers grapes mary restaurant1 restaurant2 restaurant3 we-care;
 
     @each $slide in $slides {
       .c_slide--#{$slide} & { background-image: url("../img/bg/#{$slide}.jpg"); }
