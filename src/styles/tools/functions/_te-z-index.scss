@@ -1,0 +1,12 @@
+/**
+ * Te z-index function
+ *
+ * This function allows us to easily grab z-index to apply to elements as and
+ * when needed.
+ *
+ * Uses z-index settings set in settings/_z-index.scss.
+ */
+
+@function te-z-index($name) {
+  @return map-get($te-z-index, $name);
+}

@@ -1,0 +1,16 @@
+.c_app {
+  transition: all te-transition-speed(medium) ease;
+  min-height: 100vh;
+
+  &.is-navbar-toggled {
+    transform: translateX(-90vw);
+
+    @include tablet {
+      transform: translateX(-50vw);
+    }
+
+    @include desktop {
+      transform: translateX(-33vw);
+    }
+  }
+}

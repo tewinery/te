@@ -1,30 +1,8 @@
-@font-face {
-  font-family: Brown;
-  src: url('~@/assets/fonts/brown-regular-webfont.woff2') format('woff2'),
-       url('~@/assets/fonts/brown-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: Playfair;
-  src: url('~@/assets/fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
-       url('~@/assets/fonts/playfairdisplay-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-$beige: #DDD7D1;
-$blue: #51545D;
-
-$primary: $beige;
-$link: $blue;
-
-$family-sans-serif: "Brown", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-serif: "Playfair", "Merriweather", "Georgia", serif;
-$family-primary: $family-serif;
+@import "settings/_all";
 
 @import "../../node_modules/bulma/bulma";
 
+@import "tools/functions/_all";
+
+@import "objects/_all";
 @import "components/_all";

@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 
+import * as svgicon from 'vue-svgicon';
+import 'vue-svgicon/dist/polyfill';
+
+Vue.use(svgicon, { classPrefix: 'c_svg' });
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

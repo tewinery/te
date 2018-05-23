@@ -1,0 +1,32 @@
+/**
+ * Te z-index settings
+ *
+ * Used to bring one reference point for the levels of depth.
+ *
+ * Access via te-z-index function (tools/functions/_te-z-index.scss):
+ * e.g. `te-z-index(skyscraper)`
+ *
+ * Note: Remember z-index has a *stacking context*, items within an existing
+ * z-index are relative to that. Use this to your advantage. More info:
+ * https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+ */
+
+$te-z-index: (
+  //'satellite'         :       5000,
+  //'skyscraper'        :       1000,
+  //'tower-block'       :       500,
+  //'house'             :       200,
+  //'bungalow'          :       100,
+  //'shed'              :       50,
+  //'postbox'           :       10,
+  //'donuts-box'        :       5,
+  //'flower'            :       2,
+  //'grass'             :       1,
+  //'path'              :       0,
+  'pothole'           :      -1,
+  //'ditch'             :      -11,
+  //'sewer'             :      -100,
+  //'mine'              :      -300,
+  //'seabed'            :      -1000
+);
+

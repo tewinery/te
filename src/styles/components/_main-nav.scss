@@ -1,9 +1,107 @@
-.c_main-nav {
+.c_navbar {
   text-transform: uppercase;
 }
 
 
-  .c_main-nav__bar {
+  .c_navbar__bar {
+    padding: $size-5;
     font-family: $family-sans-serif;
     font-size: $size-small;
   }
+
+
+    .c_navbar__social {
+      display: flex;
+    }
+
+
+      .c_navbar__social-item {
+        padding-right: $size-7 / 2;
+
+        &:nth-last-child(n+2) {
+          &::after {
+            content: '/';
+            padding-left: $size-7 / 2;
+          }
+        }
+      }
+
+
+  .c_navbar__hamburger {
+    position: absolute;
+    top: 0;
+    right: $size-5;
+    height: 58px;
+    font-size: $size-medium;
+    transition: all te-transition-speed(medium) ease;
+
+    .c_app.is-navbar-toggled & {
+      transform: translateX(90vw);
+      color: $text-light;
+
+      @include tablet {
+        transform: translateX(50vw);
+      }
+
+      @include desktop {
+        transform: translateX(33vw);
+      }
+    }
+  }
+
+
+  .c_navbar__sidebar {
+    position: absolute;
+    left: 100%;
+    width: 90vw;
+    top: 0;
+    bottom: 0;
+    z-index: te-z-index(pothole);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $blue;
+    color: $text-light;
+
+    @include tablet {
+      width: 50vw;
+    }
+
+    @include desktop {
+      width: 33vw;
+    }
+  }
+
+
+    .c_navbar__sidebar-list {}
+
+
+      .c_navbar__sidebar-list-item {
+        transition: all te-transition-speed(medium) ease;
+        font-size: $size-4;
+
+        &:nth-last-child(n+2) {
+          margin-bottom: $size-4;
+        }
+
+        @include tablet {
+          font-size: $size-3;
+
+          &:nth-last-child(n+2) {
+            margin-bottom: $size-2;
+          }
+        }
+      }
+
+
+      .c_navbar__sidebar-link {
+        &, &:hover, &:focus, &:active {
+          color: inherit;
+        }
+      }
+
+
+        .c_navbar__logo {
+          font-size: 3em;
+        }

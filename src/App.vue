@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div id="app" class="c_app" :class="{ 'is-navbar-toggled': navbarToggled }">
+    <Navbar @navbar-toggled="toggleNavbar" :toggled="navbarToggled" />
+    <Home />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+  import Home from '@/components/Home';
+  import Navbar from '@/components/Navbar';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: 'App',
+
+    data() {
+      return {
+        navbarToggled: false,
+      };
+    },
+
+    components: { Navbar, Home },
+
+    methods: {
+      toggleNavbar() {
+        this.navbarToggled = !this.navbarToggled;
+      },
+    },
+  };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>
