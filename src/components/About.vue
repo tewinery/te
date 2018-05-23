@@ -48,13 +48,20 @@
         </div>
       </div>
     </section>
-    <section class="section o_block has-background-dark has-text-light has-text-centered">
-      <h3 class="subtitle">Giving back</h3>
-      <p class="is-size-3">
-        All our teas are sourced through the ethical tea partnership and ten
-        percent of Té’s profits are also given to support eye care in the tea
-        producing nations.
-      </p>
+    <section class="section has-background-light has-text-light has-text-centered">
+      <h3 class="subtitle is-marginless c_giving-back__header">Giving back</h3>
+
+      <div class="section o_block o_block--large c_giving-back has-background-dark">
+        <div class="columns is-marginless is-centered">
+          <div class="column is-two-thirds-desktop is-half-desktop">
+            <p class="is-size-3">
+              All our teas are sourced through the ethical tea partnership and ten
+              percent of Té’s profits are also given to support eye care in the tea
+              producing nations.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
