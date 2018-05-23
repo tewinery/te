@@ -1,0 +1,21 @@
+/**
+ * last-mb-0 mixin
+ *
+ * Remove the margin bottom from last children
+ * 1) In some cases our children have specific margin-bottom (like .o_spacer)
+ * so we only remove margin-bottom if *--mb-default is not applied (e.g.
+ * o_block--mb-default).
+ * 1a) Remove the margin-bottom from all of the last children
+ * 1b) ...and remove margin-bottom from all last children inside of the last
+ * column inside a row.
+ */
+
+@mixin last-mb-0 {
+  &:not([class*="--mb-default"]) { /* [1] */
+    & > *:last-child, /* [1a] */
+    & > .columns:last-child > .column:last-child > *:last-child, /* [1b] */
+    & > .container:last-child > .columns:last-child > .column:last-child > *:last-child { /* [1b] */
+      margin-bottom: 0;
+    }
+  }
+}

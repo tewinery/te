@@ -3,6 +3,7 @@
  */
 
 .o_block {
+  @include last-mb-0;
      padding-top: $size-4;
   padding-bottom: $size-4;
 
