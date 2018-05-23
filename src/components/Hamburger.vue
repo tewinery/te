@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="c_hamburger u_hide@lu"
+    class="c_hamburger"
     :class="{ 'is-toggled': toggled }"
     @click="toggleHamburger"
   >
