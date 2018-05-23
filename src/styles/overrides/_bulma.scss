@@ -1,0 +1,10 @@
+.subtitle {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  border-bottom: 1px solid currentColor;
+  text-transform: uppercase;
+  font-family: $family-sans-serif;
+  font-size: $size-small;
+  padding: $size-7;
+}

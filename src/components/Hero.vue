@@ -1,7 +1,7 @@
 <template>
-  <section class="section has-background-dark">
+  <section class="section o_block has-background-dark has-text-light has-text-centered">
     <div class="container">
-      <h1 class="title has-text-light">TÉ</h1>
+      <h1 class="is-size-1">TÉ</h1>
     </div>
   </section>
 </template>

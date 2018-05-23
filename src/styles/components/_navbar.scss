@@ -1,3 +1,11 @@
+/**
+ * Navbar component
+ *
+ * 1) Hack to make sure there's not a sub-pixel gap between the sidebar and the
+ * main content (which occurs due to using viewport units to calculate width
+ * and transform)
+ */
+
 .c_navbar {
   text-transform: uppercase;
 }
@@ -51,11 +59,11 @@
 
 
   .c_navbar__sidebar {
-    position: absolute;
-    left: 100%;
-    width: 90vw;
+    position: fixed;
     top: 0;
-    bottom: 0;
+    left: calc(100% - 1px); /* [1] */
+    width: calc(90vw + 2px);
+    height: 100vh;
     z-index: te-z-index(pothole);
     display: flex;
     align-items: center;
@@ -65,11 +73,11 @@
     color: $text-light;
 
     @include tablet {
-      width: 50vw;
+      width: calc(50vw + 2px);
     }
 
     @include desktop {
-      width: 33vw;
+      width: calc(33vw + 2px);
     }
   }
 
