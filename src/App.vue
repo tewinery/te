@@ -2,12 +2,14 @@
   <div id="app" class="c_app" :class="{ 'is-navbar-toggled': navbarToggled }">
     <Navbar @navbar-toggled="toggleNavbar" :toggled="navbarToggled" />
     <Home />
+    <Footer />
   </div>
 </template>
 
 <script>
-  import Home from '@/components/Home';
+  import Home from '@/components/views/Home';
   import Navbar from '@/components/Navbar';
+  import Footer from '@/components/Footer';
 
   export default {
     name: 'App',
@@ -18,7 +20,7 @@
       };
     },
 
-    components: { Navbar, Home },
+    components: { Navbar, Home, Footer },
 
     methods: {
       toggleNavbar() {
