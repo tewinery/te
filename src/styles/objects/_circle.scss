@@ -1,0 +1,27 @@
+.o_circle {
+  position: relative;
+  display: inline-block;
+  background-color: $white;
+  border-radius: 50%;
+  width: 370px;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+
+  .o_circle__content {
+    @include last-mb-0;
+    position: absolute;
+    top: $size-1 * 1.5;
+    right: $size-2;
+    bottom: $size-1 * 1.5;
+    left: $size-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,5 +1,9 @@
 <template>
-  <div id="app" class="c_app" :class="{ 'is-navbar-toggled': navbarToggled }">
+  <div
+    id="app"
+    class="c_app has-background-white-bis"
+    :class="{ 'is-navbar-toggled': navbarToggled }"
+  >
     <Navbar @navbar-toggled="toggleNavbar" :toggled="navbarToggled" />
     <Home />
     <Footer />

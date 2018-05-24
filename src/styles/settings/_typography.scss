@@ -1,3 +1,8 @@
-$family-sans-serif: "Brown", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-serif: "Playfair", "Merriweather", "Georgia", serif;
+$family-playfair: "Playfair", "Merriweather", "Georgia", serif;
+$family-brown: "Brown", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-lato: 'Lato', $family-brown;
+
+$family-serif: $family-playfair;
+$family-sans-serif: $family-brown;
+
 $family-primary: $family-serif;
