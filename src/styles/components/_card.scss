@@ -1,0 +1,36 @@
+/**
+ * Card component
+ */
+
+.c_card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $dark;
+  padding: $size-4 $size-7 $size-6;
+
+  @include tablet {
+    padding: $size-2 $size-7 $size-4;
+  }
+}
+
+
+  .c_card__main {
+    position: relative;
+    padding-bottom: $size-4;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      height: 1px;
+      width: 35px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: currentColor;
+    }
+  }
