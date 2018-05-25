@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact" class="has-background-white-bis">
     <div class="o_block o_block--large">
       <div class="columns has-text-centered">
         <div class="column">
@@ -34,9 +34,9 @@
               </p>
             </div>
           </div>
+          <p>Sign up to our mailing list for more details:</p>
           <div class="columns o_block o_block--large o_block--bottom">
             <div class="column is-half-tablet">
-              <p>Sign up to our mailing list for more details:</p>
               <Signup />
             </div>
           </div>

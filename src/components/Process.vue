@@ -1,5 +1,9 @@
 <template>
-  <section class="section o_block o_block--large o_block--mb-default has-background-grey-dark has-text-centered has-text-light">
+  <section
+    id="process"
+    class="section o_block o_block--large o_block--mb-default
+      has-background-grey-dark has-text-centered has-text-light"
+  >
     <div class="container">
       <h2 class="subtitle">Process</h2>
       <p class="is-size-3">The four steps we take to make our wine:</p>

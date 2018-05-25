@@ -1,5 +1,8 @@
 <template>
-  <section class="section o_block o_block--large has-background-white-bis has-text-centered">
+  <section
+    id="range"
+    class="section o_block o_block--large has-background-white-bis has-text-centered"
+  >
     <div class="container">
       <div class="o_block o_block--large o_block--bottom">
         <h2 class="subtitle">The Range</h2>
@@ -55,46 +58,46 @@
         </div>
       </div>
 
-      <div class="o_block o_block--large o_block--bottom o_block--mb-default">
-        <div class="columns">
-          <div class="column is-two-thirds">
-            <div class="c_details">
-              <img
-                src="@/assets/images/te-wine-bottle.png"
-                alt="Té wine bottle"
-                class="c_details__image"
-              />
-              <div class="c_details__content">
-                <svgicon
-                  name="from-the-mim-estate"
-                  class="c_svg-icon--6x c_details__icon">
-                </svgicon>
-                <div class="o_circle">
-                  <div class="o_circle__content">
-                    <h3 class="subtitle">Good to know</h3>
-                    <p>
-                      Type: Fine Dry Wine<br />
-                      ABV: 11%<br />
-                      Serve: Chilled<br />
-                      Allergens: Contains Sulphites<br />
-                      Suitability: Vegetarians
-                      <br class="is-hidden-mobile is-hidden-tablet-only" />
-                      and Vegans<br />
-                    </p>
-                  </div>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <div class="c_details">
+            <img
+              src="@/assets/images/te-wine-bottle.png"
+              alt="Té wine bottle"
+              class="c_details__image"
+            />
+            <div class="c_details__content">
+              <svgicon
+                name="from-the-mim-estate"
+                class="c_svg-icon--6x c_details__icon">
+              </svgicon>
+              <div class="o_circle">
+                <div class="o_circle__content">
+                  <h3 class="subtitle">Good to know</h3>
+                  <p>
+                    Type: Fine Dry Wine<br />
+                    ABV: 11%<br />
+                    Serve: Chilled<br />
+                    Allergens: Contains Sulphites<br />
+                    Suitability: Vegetarians
+                    <br class="is-hidden-mobile is-hidden-tablet-only" />
+                    and Vegans<br />
+                  </p>
                 </div>
-                <svgicon
-                  name="enjoy-our-wine-chilled"
-                  class="c_svg-icon--6x c_details__icon">
-                </svgicon>
               </div>
+              <svgicon
+                name="enjoy-our-wine-chilled"
+                class="c_svg-icon--6x c_details__icon">
+              </svgicon>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="o_block o_block--bottom">
-        <h3 class="subtitle">Purchase</h3>
+      <div id="purchase" class="o_block o_block--large o_block--top">
+        <div class="o_block o_block--bottom">
+          <h3 class="subtitle">Purchase</h3>
+        </div>
       </div>
 
       <div class="o_block o_block--bottom">

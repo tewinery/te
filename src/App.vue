@@ -14,7 +14,7 @@
       @hamburger-toggled="toggleSidebar"
       class="c_navbar__hamburger"
     />
-    <Sidebar />
+    <Sidebar @close-sidebar="closeSidebar" />
   </div>
 </template>
 

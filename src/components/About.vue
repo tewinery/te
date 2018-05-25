@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="about">
     <section class="section o_block o_block--large has-background-grey-light has-text-centered">
       <div class="container">
         <div class="columns is-centered">
@@ -8,7 +8,7 @@
               <h2 class="subtitle">About</h2>
 
               <p class="is-size-3">
-                Té was founded by Ross Kenyon who’s roots go back to the industrial
+                Té was founded by Ross Kenyon whose roots go back to the industrial
                 heartlands of Yorkshire, where tea is more than a drink, it’s a way of
                 life.
               </p>
