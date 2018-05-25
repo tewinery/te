@@ -2,7 +2,7 @@
   <div class="c_navbar__sidebar">
     <ul class="c_navbar__sidebar-list">
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" class="c_navbar__sidebar-link">
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#app')" class="c_navbar__sidebar-link">
           <svgicon name="te-logo" class="c_navbar__logo"></svgicon>
         </a>
       </li>
