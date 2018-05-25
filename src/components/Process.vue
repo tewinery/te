@@ -6,7 +6,7 @@
 
       <div class="columns o_block is-multiline">
         <div class="column is-half-tablet is-one-quarter-desktop is-flex">
-          <div class="c_card has-background-medium-light-blue">
+          <div class="c_card has-background-lighter-blue">
             <h3 class="subtitle">Step one</h3>
             <p class="c_card__main">We brew the finest loose leaf tea with filtered water</p>
           </div>

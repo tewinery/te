@@ -2,11 +2,19 @@
   <div
     id="app"
     class="c_app has-background-white-bis"
-    :class="{ 'is-navbar-toggled': navbarToggled }"
+    :class="{ 'is-sidebar-toggled': sidebarToggled }"
   >
-    <Navbar @navbar-toggled="toggleNavbar" :toggled="navbarToggled" />
-    <Home />
-    <Footer />
+    <div class="c_app__main" @click="closeSidebar">
+      <Navbar />
+      <Home />
+      <Footer />
+    </div>
+    <Hamburger
+      :toggled="sidebarToggled"
+      @hamburger-toggled="toggleSidebar"
+      class="c_navbar__hamburger"
+    />
+    <Sidebar />
   </div>
 </template>
 
@@ -14,21 +22,27 @@
   import Home from '@/components/views/Home';
   import Navbar from '@/components/Navbar';
   import Footer from '@/components/Footer';
+  import Hamburger from '@/components/Hamburger';
+  import Sidebar from '@/components/Sidebar';
 
   export default {
     name: 'App',
 
     data() {
       return {
-        navbarToggled: false,
+        sidebarToggled: false,
       };
     },
 
-    components: { Navbar, Home, Footer },
+    components: { Navbar, Home, Footer, Hamburger, Sidebar },
 
     methods: {
-      toggleNavbar() {
-        this.navbarToggled = !this.navbarToggled;
+      toggleSidebar() {
+        this.sidebarToggled = !this.sidebarToggled;
+      },
+
+      closeSidebar() {
+        this.sidebarToggled = false;
       },
     },
   };

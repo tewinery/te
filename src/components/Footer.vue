@@ -35,8 +35,9 @@
             </div>
           </div>
           <div class="columns o_block o_block--large o_block--bottom">
-            <div class="column is-two-thirds-tablet">
+            <div class="column is-half-tablet">
               <p>Sign up to our mailing list for more details:</p>
+              <Signup />
             </div>
           </div>
           <div class="columns">
@@ -48,7 +49,7 @@
                 {{ (new Date()).getFullYear() }}
               </p>
             </div>
-            <div class="column has-text-right">
+            <div class="column has-text-right-tablet">
               <p>Design by StudioDBD</p>
             </div>
           </div>
@@ -59,7 +60,11 @@
 </template>
 
 <script>
+  import Signup from "@/components/Signup";
+
   export default {
     name: 'Footer',
+
+    components: { Signup },
   };
 </script>

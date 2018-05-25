@@ -42,18 +42,11 @@
     height: 58px;
     font-size: $size-medium;
     transition: all te-transition-speed(medium) ease;
+    z-index: te-z-index(grass);
 
-    .c_app.is-navbar-toggled & {
-      transform: translateX(90vw);
+    .c_app.is-sidebar-toggled & {
       color: $text-light;
-
-      @include tablet {
-        transform: translateX(50vw);
-      }
-
-      @include desktop {
-        transform: translateX(33vw);
-      }
+      position: fixed;
     }
   }
 
@@ -61,10 +54,9 @@
   .c_navbar__sidebar {
     position: fixed;
     top: 0;
-    left: calc(100% - 1px); /* [1] */
+    right: 0; /* [1] */
     width: calc(90vw + 2px);
     height: 100vh;
-    z-index: te-z-index(pothole);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -3,6 +3,14 @@ p {
   font-size: 22px;
 }
 
+input {
+  border: none;
+
+  &:focus, &:active {
+    outline: 5px solid $beige;
+  }
+}
+
 .subtitle {
   display: inline-block;
   width: 100%;
@@ -20,20 +28,26 @@ p {
 }
 
 .has-background-medium-blue { background-color: $medium-blue; }
-.has-background-medium-light-blue { background-color: $lighter-blue; }
+.has-background-lighter-blue { background-color: $lighter-blue; }
 
 .button {
   font-family: $family-lato;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 15px 30px;
+  height: auto;
 
   &:hover, &:focus, &:active {
     background-color: $dark;
     color: $light;
   }
 
+  &,
+  &.is-large {
+    font-size: $size-7;
+  }
+
   &.is-large {
     padding: 30px 40px;
-    font-size: $size-7;
   }
 }
