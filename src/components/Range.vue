@@ -20,17 +20,18 @@
           </div>
         </div>
 
-        <div class="columns is-flex is-vcentered is-centered">
+        <div class="columns is-vcentered is-centered">
           <div class="column">
             <div>
               <img
                 src="@/assets/images/teapicker-darjeeling.png"
                 alt="Darjeeling tea logo"
-                onload="this.width/=2;this.onload=null;"
+                v-on:load="resizeRetinaImage('teapicker')"
+                ref="teapicker"
               />
             </div>
           </div>
-          <div class="column has-text-left is-font-lato">
+          <div class="column has-text-left-tablet is-font-lato">
             <p class="is-size-5">
               Darjeeling is known as the ‘Champagne’ of teas and has a unique aroma
               likened to that of the Muscatel grape.
@@ -74,7 +75,7 @@
               <div class="o_circle">
                 <div class="o_circle__content">
                   <h3 class="subtitle">Good to know</h3>
-                  <p>
+                  <p class="is-size-5-mobile">
                     Type: Fine Dry Wine<br />
                     ABV: 11%<br />
                     Serve: Chilled<br />
@@ -118,5 +119,12 @@
 
   export default {
     name: 'Range',
+
+    methods: {
+      resizeRetinaImage(ref) {
+        const image = this.$refs[ref];
+        image.style.maxWidth = image.width / 2 + "px";
+      },
+    },
   };
 </script>

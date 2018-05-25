@@ -7,19 +7,19 @@
         </a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click="closeSidebar(); $scrollTo('#about')" class="c_navbar__sidebar-link">About</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#about')" class="c_navbar__sidebar-link">About</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click="closeSidebar(); $scrollTo('#process')" class="c_navbar__sidebar-link">Process</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#process')" class="c_navbar__sidebar-link">Process</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click="closeSidebar(); $scrollTo('#range')" class="c_navbar__sidebar-link">Range</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#range')" class="c_navbar__sidebar-link">Range</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click="closeSidebar(); $scrollTo('#purchase')" class="c_navbar__sidebar-link">Purchase</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#purchase')" class="c_navbar__sidebar-link">Purchase</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click="closeSidebar(); $scrollTo('#contact')" class="c_navbar__sidebar-link">Contact</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#contact')" class="c_navbar__sidebar-link">Contact</a>
       </li>
     </ul>
   </div>
