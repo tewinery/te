@@ -14,8 +14,8 @@
               unique places.
             </p>
             <p class="is-size-3">
-              Our first wine is 'Darjeeling' and it will be joined by others along
-              with special editions.
+              Our first is 'Darjeeling' which will be joined by others along
+              the way and watch out too for occasional special additions.
             </p>
           </div>
         </div>
@@ -33,27 +33,27 @@
           </div>
           <div class="column has-text-left-tablet is-font-lato">
             <p class="is-size-5">
-              Darjeeling is known as the ‘Champagne’ of teas and has a unique aroma
-              likened to that of the Muscatel grape.
+              Darjeeling is known as the 'Champagne of teas' and has a unique
+              aroma likened to that of the Muscatel grape.
             </p>
             <p class="is-size-5">
-              It is harvested in and around its namesake town of Darjeeling which
-              is located in the Indian State of West Bengal, at an elevation of
+              It is harvested around its namesake town of Darjeeling which is
+              located in the Indian State of West Bengal, at an elevation of
               6,700 feet.
             </p>
             <p class="is-size-5">
-              We specifically source our Darjeeling from the Mim Estate located in
-              Sukhiapokhri, nestled in the foothills of the Himalayas. It is a
-              government owned tea garden, which produces a finest, tippy, golden,
-              flowery, orange, pekoe leaf or in-short an FTGFOP-1.
+              We specifically source our Darjeeling from the Mim Estate located
+              in Sukhiapokhri, nestled in the foothills of the Himalayas. It is
+              a government owned tea garden, which produces a finest, tippy,
+              golden, flowery, orange, pekoe leaf or in-short an FTGFOP-1
             </p>
             <p class="is-size-5">
-              This single origin tea yields a light orange coloured liquor with a
-              delicate floral aroma with just a hint of spiciness.
+              This single origin tea yields a light orange coloured liquor with
+              a delicate floral aroma, that has just a hint of spiciness.
             </p>
             <p class="is-size-5">
-              As a wine our Darjeeling pairs well with coriander, cardamom and fish
-              based dishes, or serve chilled as an aperitif.
+              As a wine our Darjeeling pairs well with coriander, cardamom and
+              fish based dishes, or serve chilled as an aperitif.
             </p>
           </div>
         </div>
@@ -95,20 +95,36 @@
         </div>
       </div>
 
-      <div id="purchase" class="o_block o_block--large o_block--top">
+      <div id="purchase" class="o_block o_block--large">
         <div class="o_block o_block--bottom">
-          <h3 class="subtitle">Purchase</h3>
+          <h3 class="subtitle">Buy</h3>
+        </div>
+
+        <div class="o_block o_block--bottom">
+          <p class="is-size-3">
+            We ship Thursday for a Friday delivery.
+          </p>
+        </div>
+
+        <a href="#" class="button is-large">Buy our wine</a>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-two-thirds-tablet">
+          <div id="purchase" class="o_block o_block--large o_block--top">
+            <div class="o_block o_block--bottom">
+              <h4 class="is-size-4">How do I become a stockist?</h4>
+            </div>
+          </div>
+
+          <div class="o_block o_block--bottom">
+            <p>
+              Drop us an email at hello@tewinery.com with some information on your business & we will connect you with the right member of our team who can arrange a tasting.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="o_block o_block--bottom">
-        <p class="is-size-3">
-          We ship Thursday for a Friday delivery.<br class="is-hidden-mobile is-hidden-tablet-only" />
-          To place an order please click on the link below.
-        </p>
-      </div>
-
-      <a href="#" class="button is-large">Buy the wine</a>
     </div>
   </section>
 </template>

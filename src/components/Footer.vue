@@ -23,14 +23,16 @@
             <div class="column">
               <p>
                 85 Great Portland Street<br />
+                First Floor<br />
                 London<br />
                 W1W 7LT
               </p>
             </div>
             <div class="column">
               <p>
-                e: info@tewinery.com<br />
-                t: 020 xxxxxxxx
+                t: 020 3475 0631<br />
+                f: 020 7183 3073<br />
+                e: hello@tewinery.com
               </p>
             </div>
           </div>

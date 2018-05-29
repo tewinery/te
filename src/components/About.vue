@@ -30,34 +30,22 @@
         <div class="columns is-centered">
           <div class="column is-half-desktop">
             <p>
-              Ross shares his enthusiasm for tea with a passion for fine wine and a
-              wonderment that through leaf or grape the culture, history and climate
-              of a place is revealed.
-            </p>
-            <p class="is-size-3">
-              This has led him to ask the question,
-              <br class="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only" />
-              “Can I capture the essence of a place through its tea, within a
-              fine&nbsp;wine?”
-            </p>
-            <p>
-              And many months, many trials and several years later the answer
-              to that question is, “Yes!” And with it Té Wine was born.
+              Ross’s enthusiasm for loose leaf tea is shared with a passion for
+              fine wine and Té Wines was to become the perfect marriage of the
+              two.
             </p>
           </div>
         </div>
       </div>
     </section>
     <section class="section has-background-light has-text-light has-text-centered">
-      <h3 class="subtitle is-marginless c_giving-back__header">Giving back</h3>
+      <h3 class="subtitle is-marginless c_giving-back__header">Give</h3>
 
       <div class="section o_block o_block--large c_giving-back has-background-dark">
         <div class="columns is-marginless is-centered">
           <div class="column is-two-thirds-desktop is-half-desktop">
             <p class="is-size-3">
-              All our teas are sourced through the ethical tea partnership and ten
-              percent of Té’s profits are also given to support eye care in the tea
-              producing nations.
+              All of our teas are sourced through the ethical tea partnership and in addition ten percent of Té’s profits support eye care in the tea producing nations.
             </p>
           </div>
         </div>
