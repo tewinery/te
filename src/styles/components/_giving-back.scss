@@ -24,13 +24,3 @@
     z-index: te-z-index(grass);
   }
 }
-
-
-.c_giving-back__header {
-  background-color: $dark;
-  border-bottom: none;
-
-  @include tablet {
-    background-color: $medium-blue;
-  }
-}

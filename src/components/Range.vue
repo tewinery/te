@@ -4,18 +4,26 @@
     class="section o_block o_block--large has-background-white-bis has-text-centered"
   >
     <div class="container">
-      <div class="o_block o_block--large o_block--bottom">
-        <h2 class="subtitle">The Range</h2>
+      <div class="columns is-centered has-text-dark has-horizontal-lines">
+        <div class="column is-two-thirds-tablet">
+          <h3 class="subtitle">Quality</h3>
+          <div class="o_bookend">
+            <span class="o_bookend__left"></span>
+            <p class="is-marginless">
+              To make our wine we use only the finest loose leaf teas and the price per tonne of tea is much higher the price per tonne of grape, making our wines reassuringly expensive.
+            </p>
+            <span class="o_bookend__right"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="o_block o_block--large">
+        <h2 class="subtitle">First Amongst Equals</h2>
 
         <div class="columns is-centered">
           <div class="column is-two-thirds-tablet">
             <p class="is-size-3">
-              Té is a range of six wines made from six unique teas grown in six
-              unique places.
-            </p>
-            <p class="is-size-3">
-              Our first is 'Darjeeling' which will be joined by others along
-              the way and watch out too for occasional special additions.
+              Our first wine is 'Darjeeling' and it will be joined by others along the way including the occasional special edition.
             </p>
           </div>
         </div>
@@ -37,19 +45,16 @@
               aroma likened to that of the Muscatel grape.
             </p>
             <p class="is-size-5">
-              It is harvested around its namesake town of Darjeeling which is
+              It is harvested in and around its namesake town of Darjeeling
               located in the Indian State of West Bengal, at an elevation of
               6,700 feet.
             </p>
             <p class="is-size-5">
               We specifically source our Darjeeling from the Mim Estate located
-              in Sukhiapokhri, nestled in the foothills of the Himalayas. It is
-              a government owned tea garden, which produces a finest, tippy,
-              golden, flowery, orange, pekoe leaf or in-short an FTGFOP-1
-            </p>
-            <p class="is-size-5">
-              This single origin tea yields a light orange coloured liquor with
-              a delicate floral aroma, that has just a hint of spiciness.
+              in Sukhiapokhri, nestled in the foothills of the Himalayan
+              Mountains. It is a government owned tea garden, which produces a
+              finest, tippy, golden, flowery, orange, pekoe leaf or in-short an
+              FTGFOP-1.
             </p>
             <p class="is-size-5">
               As a wine our Darjeeling pairs well with coriander, cardamom and
@@ -106,7 +111,7 @@
           </p>
         </div>
 
-        <a href="#" class="button is-large">Buy our wine</a>
+        <a href="#" class="button is-large">Buy Our Wines</a>
       </div>
 
       <div class="columns is-centered">
@@ -119,7 +124,9 @@
 
           <div class="o_block o_block--bottom">
             <p>
-              Drop us an email at hello@tewinery.com with some information on your business & we will connect you with the right member of our team who can arrange a tasting.
+              Drop us an email at hello@tewinery.com with some information
+              about your business &amp; we will connect you to the right member
+              of our team to arrange a tasting.
             </p>
           </div>
         </div>
