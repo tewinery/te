@@ -16,7 +16,7 @@
         <a href="#" @click.prevent="closeSidebar(); $scrollTo('#range')" class="c_navbar__sidebar-link">Range</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
-        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#purchase')" class="c_navbar__sidebar-link">Purchase</a>
+        <a href="#" @click.prevent="closeSidebar(); $scrollTo('#purchase')" class="c_navbar__sidebar-link">Shop</a>
       </li>
       <li class="c_navbar__sidebar-list-item">
         <a href="#" @click.prevent="closeSidebar(); $scrollTo('#contact')" class="c_navbar__sidebar-link">Contact</a>

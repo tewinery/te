@@ -13,23 +13,25 @@
 
   .o_bookend__left,
   .o_bookend__right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 50px;
-    width: 1px;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: currentColor;
-
-    &::before {
-      content: '';
-      position: relative;
-      top: 50%;
-      display: block;
-      width: 100px;
-      height: 1px;
+    @include tablet {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 50px;
+      width: 1px;
+      margin-top: auto;
+      margin-bottom: auto;
       background-color: currentColor;
+
+      &::before {
+        content: '';
+        position: relative;
+        top: 50%;
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: currentColor;
+      }
     }
   }
 

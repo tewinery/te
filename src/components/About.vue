@@ -1,10 +1,10 @@
 <template>
   <div id="about">
     <section class="section o_block o_block--large has-background-grey-light has-text-centered">
-      <div class="container">
+      <div class="container slide-up" v-in-viewport.once="0">
         <div class="columns is-centered">
           <div class="column is-two-thirds-desktop">
-            <div class="o_block o_block--bottom">
+            <div class="o_block o_block--bottom" v-parallax="0.05" style="margin-top: 30px;">
               <h2 class="subtitle">About</h2>
 
               <p class="is-size-3">
@@ -23,6 +23,18 @@
                 src="../assets/images/headshot.png"
                 alt="Photo of Ross Kenyon, founder of Té"
               />
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds-desktop">
+            <div class="o_block o_block--bottom" v-parallax="0.05">
+              <h2 class="subtitle">Our wines</h2>
+
+              <p class="is-size-3">
+                Té is a range of six unique wines made from six unique teas
+                grown in six unique places.
+              </p>
             </div>
           </div>
         </div>

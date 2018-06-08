@@ -13,6 +13,16 @@
   }
 }
 
+.o_block--small {
+     padding-top: $size-7;
+  padding-bottom: $size-7;
+
+  @include tablet {
+       padding-top: $size-6;
+    padding-bottom: $size-6;
+  }
+}
+
 .o_block--large {
      padding-top: $size-1;
   padding-bottom: $size-1;

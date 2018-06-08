@@ -1,0 +1,35 @@
+.c_hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 240px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $dark;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5…EyMDd9&s=f14ecac…&auto=format&fit=crop&w=2550&q=80);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}

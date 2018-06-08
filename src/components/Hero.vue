@@ -1,6 +1,6 @@
 <template>
-  <section class="section o_block o_block--spacious has-background-dark has-text-light has-text-centered">
-    <div class="container">
+  <section class="section o_block o_block--spacious c_hero has-background-dark has-text-light has-text-centered">
+    <div class="container slide-up">
       <div class="columns is-centered is-vcentered is-mobile">
         <div class="column is-one-quarter is-hidden-xsmall">
           <svgicon name="te-teapicker-darjeeling" class="c_te-teapicker"></svgicon>
@@ -23,8 +23,17 @@
   import '@/icons/te-tagline';
   import '@/icons/te-logo';
   import '@/icons/te-teapicker-darjeeling';
+  import Parallax from 'vue-parallaxy'
 
   export default {
     name: 'Hero',
+
+    components: { Parallax },
+
+    methods: {
+      inView() {
+        console.log('in view!');
+      },
+    }
   };
 </script>

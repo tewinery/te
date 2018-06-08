@@ -1,11 +1,11 @@
 <template>
   <section class="section has-background-light has-background-dark has-text-light has-text-centered">
-    <div class="section o_block o_block--large c_giving-back">
-      <h3 class="subtitle is-marginless c_giving-back__header">Responsibility</h3>
+    <div class="section o_block o_block--large c_giving-back" v-in-viewport>
+      <h3 class="subtitle is-marginless c_giving-back__header">Quality</h3>
       <div class="columns is-marginless is-centered">
         <div class="column is-two-thirds-desktop is-half-desktop">
           <p class="is-size-3">
-            Té gives ten percent of its profits to support eye care in the tea producing nations.
+            To make our wine we use only the finest teas and the price per tonne of tea is much higher the price per tonne of grape, making our wines reassuringly expensive.
           </p>
         </div>
       </div>

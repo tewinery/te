@@ -4,7 +4,7 @@
     class="section o_block o_block--large o_block--mb-default
       has-background-grey-dark has-text-centered has-text-light"
   >
-    <div class="container">
+    <div class="container" v-in-viewport>
       <h2 class="subtitle">How we make it</h2>
 
       <div class="columns o_block is-multiline is-desktop">
@@ -17,7 +17,7 @@
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
             <h3 class="subtitle">Step two</h3>
-            <p class="c_card__main">We then sweeten our tea and add yeast</p>
+            <p class="c_card__main">Next we sweeten our tea and add yeast to it</p>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
@@ -29,13 +29,7 @@
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
             <h3 class="subtitle">Step four</h3>
-            <p class="c_card__main">The sweetness of each wine is adjusted to compliment the complex flavours of the tea</p>
-          </div>
-        </div>
-        <div class="column is-half-tablet-only is-flex">
-          <div class="c_card has-background-white-bis">
-            <h3 class="subtitle">Step five</h3>
-            <p class="c_card__main">Our bottling method minimises the risk of dissolved oxygen pick-up</p>
+            <p class="c_card__main">Sweetness is adjusted to compliment the complex flavours of each tea</p>
           </div>
         </div>
       </div>
