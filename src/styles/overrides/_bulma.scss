@@ -11,6 +11,7 @@ p {
 
 input {
   border: none;
+  color: inherit;
 
   &:focus, &:active {
     outline: 5px solid $beige;

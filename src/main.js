@@ -7,6 +7,8 @@ import VueParallaxJs from 'vue-parallax-js'
 
 import App from './App';
 
+import router from './router';
+
 Vue.use(VueScrollTo, {
   duration: 1000,
 });
@@ -25,6 +27,7 @@ Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
+  router,
   el: '#app',
   components: { App },
   template: '<App/>'

@@ -40,7 +40,7 @@
           <div class="o_bookend">
             <span class="o_bookend__left"></span>
             <p class="is-marginless">
-              All of our teas are sourced through the ethical tea partnership
+              All of our teas are sourced through the ethical tea&nbsp;partnership
             </p>
             <span class="o_bookend__right"></span>
           </div>

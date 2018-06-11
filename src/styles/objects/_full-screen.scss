@@ -1,0 +1,19 @@
+/**
+ * Full height object
+ *
+ * 1) We need two elements here as IE11 has a bug regarding min-height. For
+ * more info on the fix see: https://github.com/philipwalton/flexbugs#flexbug-3
+ */
+
+.o_full-height {
+  display: flex;
+  flex-direction: column;
+}
+
+
+  .o_full-height__inner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
