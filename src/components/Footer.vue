@@ -16,7 +16,7 @@
           <div class="columns o_block o_block--large o_block--bottom">
             <div class="column u_last-mb-0">
               <p>
-                Peaks
+                The Peaks
                 <span class="is-font-playfair">&amp;</span>
                 Otter (Drinks) Co. Ltd
               </p>
@@ -46,7 +46,7 @@
           <div class="columns">
             <div class="column u_last-mb-0">
               <p>
-                &copy; Peaks
+                &copy; The Peaks
                 <span class="is-font-playfair">&amp;</span>
                 Otter (Drinks) Co. Ltd
                 {{ (new Date()).getFullYear() }}
