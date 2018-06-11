@@ -31,12 +31,12 @@
             </p>
             <p class="is-size-5">
               We specifically source our tea from the Mim Estate, which is
-              nestled in the foothills of the Himalayan Mountains in
+              nestled in the foothills of the Himalayan Mountains, in
               Sukhiapokhri.
             </p>
             <p class="is-size-5">
               It is a government owned tea garden, which produces a finest,
-              tippy, golden, flowery, orange, pekoe leaf or in-short an
+              tippy, golden, flowery, orange, pekoe leaf, or in-short an
               FTGFOP-1.
             </p>
             <p class="is-size-5">
