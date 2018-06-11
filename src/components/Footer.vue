@@ -6,7 +6,7 @@
           <div class="section o_block o_block--small o_block--bottom">
             <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>
           </div>
-          <svgicon name="te-teapicker-darjeeling" class="c_te-teapicker"></svgicon>
+          <svgicon name="te-teapicker-darjeeling" class="c_te-teapicker has-text-dark"></svgicon>
         </div>
       </div>
     </div>
