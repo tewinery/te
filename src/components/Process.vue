@@ -11,25 +11,25 @@
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-lighter-blue">
             <h3 class="subtitle">Step one</h3>
-            <p class="c_card__main">We steep filtered water with the finest loose leaf tea</p>
+            <p class="c_card__main">We steep the finest loose leaf tea with filtered water</p>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
             <h3 class="subtitle">Step two</h3>
-            <p class="c_card__main">Next we sweeten our tea and add yeast to it</p>
+            <p class="c_card__main">Our tea is then sweetened and yeast added to it</p>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-light">
             <h3 class="subtitle">Step three</h3>
-            <p class="c_card__main">Our tea is then fermented under temperature control</p>
+            <p class="c_card__main">Our tea then undergoes a temperature controlled fermentation</p>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
             <h3 class="subtitle">Step four</h3>
-            <p class="c_card__main">Sweetness is adjusted to compliment the complex flavours of each tea</p>
+            <p class="c_card__main">Finally we adjust sweetness to compliment the complex flavours of each tea</p>
           </div>
         </div>
       </div>

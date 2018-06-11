@@ -5,7 +5,9 @@
       <div class="columns is-marginless is-centered">
         <div class="column is-two-thirds-desktop is-half-desktop">
           <p class="is-size-3">
-            To make our wine we use only the finest teas and the price per tonne of tea is much higher the price per tonne of grape, making our wines reassuringly expensive.
+            We use only the finest tea to make our wines and the price per
+            tonne of tea is much higher the price per tonne of grape, which
+            makes our wines reassuringly expensive.
           </p>
         </div>
       </div>
