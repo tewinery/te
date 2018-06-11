@@ -53,7 +53,7 @@
         <div class="column is-two-thirds">
           <div class="c_details">
             <img
-              src="https://images.unsplash.com/photo-1513638833238-3c89a39aa49f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ccbacea4c8c6d5619a7f248840442f0&auto=format&fit=crop&w=3934&q=80"
+              src="../assets/images/wine-glass-vertical.jpg"
               alt="Té wine bottle"
               class="c_details__image"
             />

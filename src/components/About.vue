@@ -20,8 +20,8 @@
           <div class="column is-two-thirds-tablet is-half-desktop">
             <div class="o_block o_block--bottom">
               <img
-                src="../assets/images/headshot.png"
-                alt="Photo of Ross Kenyon, founder of Té"
+                src="../assets/images/adventure-begins.jpg"
+                alt="Pouring tea"
               />
             </div>
           </div>
