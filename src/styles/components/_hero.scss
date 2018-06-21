@@ -1,3 +1,9 @@
+/**
+ * Hero component
+ *
+ * 1) Override inline styled agile component (not sure why inlined but...)
+ */
+
 .c_hero {
   position: relative;
   display: flex;
@@ -26,7 +32,7 @@
 
   .c_hero__bg {
     content: '';
-    position: absolute;
+    position: absolute !important; /* [1] */
     top: 0;
     right: 0;
     bottom: 0;
