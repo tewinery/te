@@ -3,16 +3,17 @@
 import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
 import InViewportDirective from 'vue-in-viewport-directive';
-import VueParallaxJs from 'vue-parallax-js'
+import VueParallaxJs from 'vue-parallax-js';
+import VueAgile from 'vue-agile';
+
 
 import App from './App';
 
 import router from './router';
 
-Vue.use(VueScrollTo, {
-  duration: 1000,
-});
-Vue.use(VueParallaxJs)
+Vue.use(VueScrollTo, { duration: 1000 });
+Vue.use(VueParallaxJs);
+Vue.use(VueAgile);
 
 InViewportDirective.defaults.top = -100;
 

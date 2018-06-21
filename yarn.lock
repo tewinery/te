@@ -5915,6 +5915,12 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-agile@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/vue-agile/-/vue-agile-0.3.7.tgz#dfab89b0e4d55c9da8a6fcdc58f69c79242b4057"
+  dependencies:
+    vue "2.*.*"
+
 vue-gh-pages@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/vue-gh-pages/-/vue-gh-pages-1.16.0.tgz#337cbb914d846961f8d3cd3534def6022c521af6"
@@ -5996,7 +6002,7 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-vue@^2.5.2:
+vue@2.*.*, vue@^2.5.2:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
 
