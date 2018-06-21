@@ -3,6 +3,10 @@
  */
 
 .c_te-tagline {
-  font-size: 16em;
+  font-size: 15em;
   height: 0.155em;
+
+  @include tablet {
+    font-size: 18em;
+  }
 }

@@ -1,18 +1,15 @@
 <template>
   <div id="contact" class="has-background-white-bis">
-    <div class="o_block o_block--large">
+    <div class="o_block">
       <div class="columns has-text-centered">
         <div class="column">
-          <div class="section o_block o_block--small o_block--bottom">
-            <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>
-          </div>
-          <svgicon name="te-teapicker-darjeeling" class="c_te-teapicker has-text-dark"></svgicon>
+          <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>
         </div>
       </div>
     </div>
     <section class="section">
       <div class="o_block o_block--spacious c_footer">
-        <div class="container">
+        <div class="section container">
           <div class="columns o_block o_block--large o_block--bottom">
             <div class="column u_last-mb-0">
               <p>
@@ -33,7 +30,7 @@
               <p>
                 <span class="is-lowercase">t:</span> 020 3475 0631<br />
                 <span class="is-lowercase">f:</span> 020 7183 3073<br />
-                <span class="is-lowercase">e:</span> hello@tewinery.com
+                <span class="is-lowercase">e:</span> <a href="mailto:hello@tewinery.com">hello@tewinery.com</a>
               </p>
             </div>
           </div>

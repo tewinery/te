@@ -20,7 +20,7 @@
               <svgicon name="te-teapicker-darjeeling-combo" class="c_te-teapicker-combo"></svgicon>
             </div>
           </div>
-          <div class="column has-text-left-tablet is-font-lato">
+          <div class="section column has-text-left-tablet is-font-lato">
             <p class="is-size-5">
               Darjeeling is known as the 'Champagne of Teas' and has a unique
               aroma likened to that of the Muscatel grape.
@@ -106,7 +106,7 @@
           </div>
 
           <p>
-            Drop us an email at hello@tewinery.com with some information
+            Drop us an email at <a href="mailto:hello@tewinery.com">hello@tewinery.com</a> with some information
             about your business, so that we can connect you to the right member
             of our team.
           </p>

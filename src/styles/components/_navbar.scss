@@ -36,7 +36,7 @@
 
 
   .c_navbar__hamburger {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: $size-5;
     height: 3.625rem;
@@ -79,14 +79,14 @@
 
       .c_navbar__sidebar-list-item {
         transition: all te-transition-speed(medium) ease;
-        font-size: $size-4;
+        font-size: $size-3;
 
         &:nth-last-child(n+2) {
           margin-bottom: $size-4;
         }
 
         @include tablet {
-          font-size: $size-3;
+          font-size: $size-2;
 
           &:nth-last-child(n+2) {
             margin-bottom: $size-2;
@@ -98,6 +98,10 @@
       .c_navbar__sidebar-link {
         &, &:hover, &:focus, &:active {
           color: inherit;
+        }
+
+        &:hover {
+          opacity: 0.5;
         }
       }
 

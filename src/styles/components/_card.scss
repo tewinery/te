@@ -1,18 +1,29 @@
 /**
  * Card component
+ *
+ * 1) Necessary to include an inner component to stop IE from overflowing its
+ * width.
  */
 
 .c_card {
   flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $dark;
-  padding: $size-4 $size-7 $size-6;
 
-  @include tablet {
-    padding: $size-2 $size-7 $size-4;
+  @include desktop {
+    &::before {
+      content: "";
+      float: left;
+      padding-bottom: 100%;
+    }
+
+    &::after {
+      clear: left;
+      content: " ";
+      display: table;
+    }
   }
 
   [data-in-viewport] & {
@@ -49,6 +60,16 @@
     }
   }
 }
+
+
+  .c_card__inner { /* [2] */
+    @include last-mb-0;
+    padding: $size-4 $size-7 $size-2;
+
+    @include tablet {
+      padding: $size-4 $size-7 $size-2;
+    }
+  }
 
 
   .c_card__main {

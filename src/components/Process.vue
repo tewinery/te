@@ -10,26 +10,34 @@
       <div class="columns o_block is-multiline is-desktop">
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-lighter-blue">
-            <h3 class="subtitle">Step one</h3>
-            <p class="c_card__main">We steep the finest loose leaf tea with filtered water</p>
+            <div class="c_card__inner">
+              <h3 class="subtitle">Step one</h3>
+              <p class="c_card__main">We steep the finest loose leaf tea with filtered water</p>
+            </div>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
-            <h3 class="subtitle">Step two</h3>
-            <p class="c_card__main">Our tea is then sweetened and yeast added to it</p>
+            <div class="c_card__inner">
+              <h3 class="subtitle">Step two</h3>
+              <p class="c_card__main">Our tea is then sweetened and yeast added to it</p>
+            </div>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-light">
-            <h3 class="subtitle">Step three</h3>
-            <p class="c_card__main">Our tea then undergoes a temperature controlled fermentation</p>
+            <div class="c_card__inner">
+              <h3 class="subtitle">Step three</h3>
+              <p class="c_card__main">Our tea then undergoes a temperature controlled fermentation</p>
+            </div>
           </div>
         </div>
         <div class="column is-half-tablet-only is-flex">
           <div class="c_card has-background-white-bis">
-            <h3 class="subtitle">Step four</h3>
-            <p class="c_card__main">Finally we adjust sweetness to compliment the complex flavours of each tea</p>
+            <div class="c_card__inner">
+              <h3 class="subtitle">Step four</h3>
+              <p class="c_card__main">Finally we adjust sweetness to compliment the complex flavours of each tea</p>
+            </div>
           </div>
         </div>
       </div>
