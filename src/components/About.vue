@@ -21,7 +21,7 @@
             <div class="o_block o_block--bottom">
               <img
                 src="../assets/images/adventure-begins.jpg"
-                alt="Pouring tea"
+                alt="The adventure begins"
               />
             </div>
           </div>
