@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="has-background-white-bis">
-    <div class="o_block">
+    <div class="o_block o_block--large">
       <div class="columns has-text-centered">
         <div class="column">
           <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>

@@ -5626,6 +5626,10 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-cookie@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/tiny-cookie/-/tiny-cookie-2.1.2.tgz#3c25689a07c76438f90209648c143976b0b52bef"
+
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -5920,6 +5924,12 @@ vue-agile@^0.3.7:
   resolved "https://registry.yarnpkg.com/vue-agile/-/vue-agile-0.3.7.tgz#dfab89b0e4d55c9da8a6fcdc58f69c79242b4057"
   dependencies:
     vue "2.*.*"
+
+vue-cookie-accept-decline@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/vue-cookie-accept-decline/-/vue-cookie-accept-decline-1.0.9.tgz#1b250667a93275757cc845fea48beefb05bfcd9f"
+  dependencies:
+    tiny-cookie "^2.1.2"
 
 vue-gh-pages@^1.16.0:
   version "1.16.0"
