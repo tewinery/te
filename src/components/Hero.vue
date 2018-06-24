@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <agile :arrows="false" :dots="false" :speed="1500" :autoplaySpeed="7500"
+    <agile :arrows="false" :dots="false" :speed="1500" :autoplaySpeed="5500"
         :timing="'linear'" :fade="true"
         :autoplay="true" :pauseOnHover="false" class="c_hero__bg">
         <div class="slide slide--1"></div>

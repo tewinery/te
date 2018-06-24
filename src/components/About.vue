@@ -10,7 +10,7 @@
               <p class="is-size-3">
                 Té was founded by Ross Kenyon who has roots that go back to the
                 industrial heartlands of Yorkshire, where tea is more than a
-                drink, it’s a way of life.
+                drink, it’s a way of life
               </p>
             </div>
           </div>
@@ -33,7 +33,7 @@
 
               <p class="is-size-3">
                 Té is a range of six unique wines made from six unique teas
-                grown in six unique places.
+                grown in six unique places
               </p>
             </div>
           </div>
