@@ -23,21 +23,21 @@
           <div class="section column has-text-left-tablet is-font-lato">
             <p class="is-size-5">
               Darjeeling is known as the 'Champagne of Teas' and has a unique
-              aroma likened to that of the Muscatel grape
+              aroma likened to that of the Muscatel grape.
             </p>
             <p class="is-size-5">
               We specifically source our Darjeeling from the Mim Estate, which is
               nestled in the foothills of the Himalayan Mountains, in
-              the Indian State of West Bengal, at an elevation of 6,700 feet
+              the Indian State of West Bengal, at an elevation of 6,700 feet.
             </p>
             <p class="is-size-5">
               It is a government owned tea garden, which produces a finest,
               tippy, golden, flowery, orange, pekoe leaf, or in-short an
-              FTGFOP-1
+              FTGFOP-1.
             </p>
             <p class="is-size-5">
               As a wine Té Darjeeling pairs well with coriander, cardamom and
-              fish based dishes, or it can be served chilled as an aperitif
+              fish based dishes, or it can be served chilled as an aperitif.
             </p>
           </div>
         </div>
