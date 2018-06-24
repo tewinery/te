@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/views/Home';
 import ListAlmostThere from '@/components/views/ListAlmostThere';
+import TermsAndConditions from '@/components/views/TermsAndConditions';
 
 Vue.use(Router);
 
@@ -28,6 +29,10 @@ export default new Router({
       path: '/list/almost-there',
       name: 'list-almost-there',
       component: ListAlmostThere,
+    }, {
+      path: '/terms-and-conditions',
+      name: 'terms-and-conditions',
+      component: TermsAndConditions,
     },
   ],
 });

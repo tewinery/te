@@ -28,6 +28,7 @@ input {
   font-size: $size-small;
   padding: $size-7;
   letter-spacing: 0.2em;
+  text-align: center;
 
   &[class*="has-background"] {
     border-bottom: none;
