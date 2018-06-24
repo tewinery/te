@@ -5,7 +5,8 @@ import VueScrollTo from 'vue-scrollto';
 import InViewportDirective from 'vue-in-viewport-directive';
 import VueParallaxJs from 'vue-parallax-js';
 import VueAgile from 'vue-agile';
-import VueCookieAcceptDecline from 'vue-cookie-accept-decline'
+import VueCookieAcceptDecline from 'vue-cookie-accept-decline';
+import VueCookie from 'vue-cookie';
 import * as svgicon from 'vue-svgicon';
 import 'vue-svgicon/dist/polyfill';
 
@@ -16,6 +17,7 @@ Vue.use(VueScrollTo, { duration: 1000 });
 Vue.use(VueParallaxJs);
 Vue.use(VueAgile);
 Vue.use(svgicon, { classPrefix: 'c_svg' });
+Vue.use(VueCookie);
 
 InViewportDirective.defaults.top = -100;
 
