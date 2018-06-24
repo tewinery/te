@@ -94,7 +94,7 @@
           </p>
         </div>
 
-        <a href="#" class="button is-large">Buy Our Wines</a>
+        <BuyButton />
       </div>
 
       <div class="columns is-centered">
@@ -120,9 +120,12 @@
   import '@/icons/from-the-mim-estate';
   import '@/icons/enjoy-our-wine-chilled';
   import '@/icons/te-teapicker-darjeeling-combo';
+  import BuyButton from '@/components/BuyButton';
 
   export default {
     name: 'Range',
+
+    components: { BuyButton },
 
     methods: {
       resizeRetinaImage(ref) {
