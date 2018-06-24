@@ -69,10 +69,7 @@
               }
             },
             "button": {
-              "border": "1px solid #51545D",
               "font-size": "12px",
-              "background-color": "transparent",
-              "color": "#51545D",
               "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
               "padding-top": "26px",
               "padding-bottom": "26px",
@@ -80,6 +77,9 @@
               "padding-right": "36px",
               "letter-spacing": "0.2em",
               "text-transform": "uppercase",
+              "border": "1px solid #51545D",
+              "background-color": "transparent",
+              "color": "#51545D",
               ":hover": {
                 "background-color": "#4b4e56",
                 "color": "#fff",
@@ -118,6 +118,14 @@
           },
           "styles": {
             "button": {
+              "font-size": "12px",
+              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+              "padding-top": "15px",
+              "padding-bottom": "15px",
+              "padding-left": "30px",
+              "padding-right": "30px",
+              "letter-spacing": "0.2em",
+              "text-transform": "uppercase",
               "background-color": "#51545D",
               "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
               ":hover": {
