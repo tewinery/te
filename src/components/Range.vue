@@ -26,13 +26,9 @@
               aroma likened to that of the Muscatel grape.
             </p>
             <p class="is-size-5">
-              It is harvested in and around its namesake town of Darjeeling
-              located in the Indian State of West Bengal.
-            </p>
-            <p class="is-size-5">
-              We specifically source our tea from the Mim Estate, which is
+              We specifically source our Darjeeling from the Mim Estate, which is
               nestled in the foothills of the Himalayan Mountains, in
-              Sukhiapokhri.
+              the Indian State of West Bengal.
             </p>
             <p class="is-size-5">
               It is a government owned tea garden, which produces a finest,
@@ -41,7 +37,7 @@
             </p>
             <p class="is-size-5">
               As a wine our Darjeeling pairs well with coriander, cardamom and
-              fish based dishes, or serve chilled as an aperitif.
+              fish based dishes, or it can be served chilled as an aperitif.
             </p>
           </div>
         </div>
@@ -101,7 +97,7 @@
         <div class="column is-two-thirds-tablet">
           <div id="purchase">
             <div class="o_block o_block--bottom">
-              <h4 class="is-size-4">How do I become a stockist?</h4>
+              <h3 class="subtitle" style="max-width:320px">How do I become a stockist?</h3>
             </div>
           </div>
 
