@@ -49,7 +49,7 @@
               <a href="/refund-policy" target="_blank">Refund Policy</a>
             </div>
           </div>
-          <div class="columns">
+          <div class="columns c_footer__end">
             <div class="column is-two-thirds-tablet u_last-mb-0">
               <p>
                 &copy; The Peaks
@@ -59,7 +59,7 @@
               </p>
             </div>
             <div class="column is-one-third-tablet u_last-mb-0">
-              <a href="http://www.studiodbd.com/" target="_blank" style="background: none;">Design by Studio DBD</a>
+              <a href="http://www.studiodbd.com/" target="_blank" style="background: none;" class="is-size-7">Design by Studio DBD</a>
             </div>
           </div>
         </div>

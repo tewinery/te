@@ -8,3 +8,11 @@
     font-size: $size-6;
   }
 }
+
+
+  .c_footer__end {
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }

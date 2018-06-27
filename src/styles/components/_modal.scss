@@ -19,7 +19,7 @@
 .modal-container {
   width: 80%;
   max-width: 450px;
-  padding: 20px 30px 30px;
+  padding: 30px;
   margin: 0px auto;
   background-color: #fff;
   border-radius: 2px;
@@ -27,7 +27,7 @@
   transition: all .3s ease;
 
   @include tablet {
-    padding: 40px 60px 50px;
+    padding: 50px 60px;
   }
 }
 

@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="c_app has-background-white-bis">
     <modal v-if="showModal" @close="acceptOver18">
-      <h3 slot="header">Adults only (18+)</h3>
       <p slot="body">
         Té Wines advocates responsible alcohol consumption. This website is
         intended exclusively for persons who are of legal age
