@@ -102,9 +102,9 @@
           </div>
 
           <p>
-            Drop us an email at <a href="mailto:hello@tewinery.com">hello@tewinery.com</a> with some information
-            about your business, so that we can connect you to the right member
-            of our team
+            <a href="mailto:hello@tewinery.com">Drop us an email</a> with some
+            information about your business, so that we can connect you to the
+            right member of our team
           </p>
         </div>
       </div>

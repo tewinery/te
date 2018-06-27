@@ -18,8 +18,8 @@
 
           <div class="modal-footer">
             <slot name="footer">
-              <button class="button modal-default-button" @click="$emit('close')">
-                OK
+              <button class="button modal-default-button" @click="$emit('close')" style="white-space: normal;">
+                I am over 18 years of age
               </button>
             </slot>
           </div>

@@ -12,7 +12,7 @@
           <div class="c_card has-background-lighter-blue">
             <div class="c_card__inner">
               <h3 class="subtitle">Step one</h3>
-              <p class="c_card__main">We steep the finest loose leaf tea with filtered water</p>
+              <p class="c_card__main">We steep the finest loose leaf tea in filtered water</p>
             </div>
           </div>
         </div>

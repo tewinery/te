@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from '@/components/views/Home';
 import ListAlmostThere from '@/components/views/ListAlmostThere';
 import TermsAndConditions from '@/components/views/TermsAndConditions';
+import PrivacyPolicy from '@/components/views/PrivacyPolicy';
+import RefundPolicy from '@/components/views/RefundPolicy';
 
 Vue.use(Router);
 
@@ -33,6 +35,14 @@ export default new Router({
       path: '/terms-and-conditions',
       name: 'terms-and-conditions',
       component: TermsAndConditions,
+    }, {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: PrivacyPolicy,
+    }, {
+      path: '/refund-policy',
+      name: 'refund-policy',
+      component: RefundPolicy,
     },
   ],
 });

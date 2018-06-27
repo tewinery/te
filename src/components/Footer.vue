@@ -39,15 +39,27 @@
             <div class="column u_last-mb-0 is-half-tablet">
               <Signup />
             </div>
+            <div class="column is-one-third-tablet is-offset-2-tablet u_last-mb-0">
+              <a href="/terms-and-conditions" target="_blank">
+                Terms
+                <span class="is-font-playfair">&amp;</span>
+                Conditions
+              </a><br />
+              <a href="/privacy-policy" target="_blank">Privacy Policy</a><br />
+              <a href="/refund-policy" target="_blank">Refund Policy</a>
+            </div>
           </div>
           <div class="columns">
-            <div class="column u_last-mb-0">
+            <div class="column is-two-thirds-tablet u_last-mb-0">
               <p>
                 &copy; The Peaks
                 <span class="is-font-playfair">&amp;</span>
                 Otter (Drinks) Co. Ltd
                 {{ (new Date()).getFullYear() }}
               </p>
+            </div>
+            <div class="column is-one-third-tablet u_last-mb-0">
+              <a href="http://www.studiodbd.com/" target="_blank" style="background: none;">Design by Studio DBD</a>
             </div>
           </div>
         </div>

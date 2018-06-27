@@ -3,8 +3,8 @@
     <modal v-if="showModal" @close="acceptOver18">
       <h3 slot="header">Adults only (18+)</h3>
       <p slot="body">
-        Té sell alcohol, their website is only suitable for those 18 years or
-        older. Enter only if you are at least 18 years of age.
+        Té Wines advocates responsible alcohol consumption. This website is
+        intended exclusively for persons who are of legal age
       </p>
     </modal>
     <router-view/>

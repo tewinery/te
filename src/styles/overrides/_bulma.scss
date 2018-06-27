@@ -9,6 +9,19 @@ p {
   font-size: 22px;
 }
 
+a {
+  background-image: linear-gradient(to right, rgba($dark, 0.25) 0%, rgba($dark, 0.25) 100%);
+  background-repeat: repeat-x; // make it horizontal
+  background-position: 0 100%; // change the second value to adjust how far from the top the underline should be
+  background-size: 100% 0.15em; // change the second value to the desired height of the underline
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgba($dark, 0.5) 0%, rgba($dark, 0.5) 100%);
+  }
+}
+
 input {
   border: none;
   color: inherit;
