@@ -1,0 +1,57 @@
+/**
+ * Details component
+ */
+
+.c_details {
+  position: relative;
+
+  @include mobile {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 130px;
+  }
+
+}
+
+
+  .c_details__image {
+    display: block;
+  }
+
+
+  .c_details__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+
+    @include tablet {
+      flex-direction: column;
+      top: 0;
+      left: auto;
+      transform: translateX(50%);
+    }
+  }
+
+
+  .c_details__icon {
+    display: none;
+
+    @media screen and (min-width: 700px) {
+      display: block;
+
+      &:first-child { margin: 0 $size-2 0 0; }
+      &:last-child { margin: 0 0 0 $size-2; }
+    }
+
+    @include tablet {
+      &:first-child { margin: 0 0 $size-1; }
+      &:last-child { margin: $size-1 0 0; }
+    }
+  }

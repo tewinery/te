@@ -1,0 +1,16 @@
+/**
+ * Te teapicker component
+ */
+
+.c_te-teapicker {
+  font-size: 5em;
+
+  @include desktop {
+    font-size: 10em;
+  }
+}
+
+
+  .c_te-teapicker--reverse {
+    transform: scaleX(-1);
+  }

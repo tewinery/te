@@ -1,0 +1,12 @@
+/**
+ * Te transition speed function
+ *
+ * This function allows us to easily grab transition speed to apply to elements
+ *  as and when needed.
+ *
+ * Uses transition speed settings set in settings/_transition.scss.
+ */
+
+@function te-transition-speed($speed) {
+  @return map-get($te-transition-speed, $speed);
+}

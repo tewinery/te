@@ -1,0 +1,56 @@
+/**
+ * Hero component
+ *
+ * 1) Override inline styled agile component (not sure why inlined but...)
+ * 2) IE fix: Force IE to center min-height block by applying height.
+ * more info: https://stackoverflow.com/a/25386261/827129
+ */
+
+.c_hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $dark;
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
+
+
+  .c_hero__main {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 240px);
+
+    @include mobile {
+         padding-top: $size-1 * 3;
+      padding-bottom: $size-1 * 3;
+    }
+  }
+
+
+  .c_hero__bg {
+    content: '';
+    position: absolute !important; /* [1] */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+
+    .slide {
+      min-height: 100%;
+    }
+  }

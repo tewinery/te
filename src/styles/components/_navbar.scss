@@ -1,0 +1,111 @@
+/**
+ * Navbar component
+ *
+ * 1) Hack to make sure there's not a sub-pixel gap between the sidebar and the
+ * main content (which occurs due to using viewport units to calculate width
+ * and transform)
+ */
+
+.c_navbar {
+  text-transform: uppercase;
+}
+
+
+  .c_navbar__bar {
+    padding: $size-5;
+    font-family: $family-sans-serif;
+    font-size: $size-small;
+  }
+
+
+    .c_navbar__social {
+      display: flex;
+    }
+
+
+      .c_navbar__social-item {
+        padding-right: $size-7 / 2;
+
+        &:nth-last-child(n+2) {
+          &::after {
+            content: '/';
+            padding-left: $size-7 / 2;
+          }
+        }
+      }
+
+
+  .c_navbar__hamburger {
+    position: absolute;
+    top: 0;
+    right: $size-5;
+    height: 3.625rem;
+    font-size: $size-medium;
+    transition: all te-transition-speed(medium) ease;
+    z-index: te-z-index(grass);
+
+    .is-sidebar-toggled & {
+      color: $text-light;
+      position: fixed;
+    }
+  }
+
+
+  .c_navbar__sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* [1] */
+    width: calc(90vw + 2px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $blue;
+    color: $text-light;
+
+    @include tablet {
+      width: calc(50vw + 2px);
+    }
+
+    @include desktop {
+      width: calc(33vw + 2px);
+    }
+  }
+
+
+    .c_navbar__sidebar-list {}
+
+
+      .c_navbar__sidebar-list-item {
+        transition: all te-transition-speed(medium) ease;
+        font-size: $size-3;
+
+        &:nth-last-child(n+2) {
+          margin-bottom: $size-4;
+        }
+
+        @include tablet {
+          font-size: $size-2;
+
+          &:nth-last-child(n+2) {
+            margin-bottom: $size-2;
+          }
+        }
+      }
+
+
+      .c_navbar__sidebar-link {
+        &, &:hover, &:focus, &:active {
+          color: inherit;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+
+        .c_navbar__logo {
+          font-size: 3em;
+        }

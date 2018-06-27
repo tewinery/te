@@ -1,0 +1,26 @@
+/**
+ * Local var function
+ *
+ * This function allows us to "hack in" local variables into Sass. So if we
+ * need specific variables just for a specific component or objects we can set
+ * these in a `$local-vars` Sass map, and then access with
+ * `local-var(image-size)` for example.
+ *
+ * 1) If we have a nested sass map use map-deep-get, else just use map-get.
+ * 2) $local-vars: This should be a Sass map containing our local variables. If
+ * desired this can be two levels deep, allowing for a default to be set as
+ * well as other options, e.g. "large" if variables need to be different for
+ * larger breakpoints.
+ * 3) $context: optional param, if the $local-vars is two levels deep use this
+ * to set which inner map you're targeting.
+ * 4) $var: The variable from the Sass map we want to select, e.g.
+ * `image-size`.
+ */
+
+@function local-var($var, $context: default) {
+  @if (map-depth($local-vars) >= 2) { /* [1] */
+    @return map-deep-get($local-vars, $context, $var); /* [2], [3], [4] */
+  } @else { /* [1a] */
+    @return map-get($local-vars, $var);
+  }
+}

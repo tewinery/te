@@ -1,0 +1,10 @@
+.c_footer {
+  border-top: 1px solid $blue;
+  font-family: $family-brown;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  p {
+    font-size: $size-6;
+  }
+}

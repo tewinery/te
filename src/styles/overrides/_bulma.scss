@@ -1,0 +1,67 @@
+html {
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+p {
+  margin-bottom: $size-4;
+  font-size: 22px;
+}
+
+input {
+  border: none;
+  color: inherit;
+
+  &:focus, &:active {
+    outline: 5px solid $beige;
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  border-bottom: 1px solid currentColor;
+  text-transform: uppercase;
+  font-family: $family-sans-serif;
+  font-size: $size-small;
+  padding: $size-7;
+  letter-spacing: 0.2em;
+  text-align: center;
+
+  &[class*="has-background"] {
+    border-bottom: none;
+  }
+}
+
+.has-background-medium-blue { background-color: $medium-blue; }
+.has-background-lighter-blue { background-color: $lighter-blue; }
+
+.button {
+  font-family: $family-lato;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  height: auto;
+
+  &:hover, &:focus, &:active {
+    background-color: $dark;
+    color: $light;
+  }
+
+  &,
+  &.is-large {
+    font-size: $size-7;
+  }
+
+  &.is-large {
+    padding: 26px 36px;
+  }
+}
+
+.is-stacked-mobile {
+  @include mobile {
+    flex-direction: column;
+  }
+}

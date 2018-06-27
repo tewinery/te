@@ -1,0 +1,26 @@
+.c_giving-back {
+  position: relative;
+
+  &::after {
+    @include tablet {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $medium-blue;
+      mask: url(~@/assets/icons/te-logo-accent.svg) no-repeat 50% 50%;
+      mask-size: 100% 250%;
+    }
+
+    @include desktop {
+      mask-size: 100% 320%;
+    }
+  }
+
+  & > * {
+    position: relative;
+    z-index: te-z-index(grass);
+  }
+}

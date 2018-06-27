@@ -1,0 +1,41 @@
+/**
+ * Cookie notice component
+ *
+ * From: https://github.com/promosis/vue-cookie-accept-decline
+ */
+
+.cookie {
+  font-family: $family-lato !important;
+
+  &--bottom {
+    border-top: 1px solid #ddd;
+  }
+
+  &--top {
+  }
+
+  &__content {
+  }
+
+  &__buttons {
+    &__button {
+      font-family: $family-lato !important;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 13px 22px !important;
+      height: auto;
+      font-size: 12px !important;
+
+      &--accept {
+        background-color: $dark !important;
+      }
+
+      &--decline {
+        background-color: transparent !important;
+        color: $dark !important;
+        padding-right: $size-7 !important;
+        padding-left: $size-7 !important;
+      }
+    }
+  }
+}

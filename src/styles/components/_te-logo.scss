@@ -1,0 +1,16 @@
+/**
+ * Te logo component
+ */
+
+.c_te-logo {
+  height: 0.708em;
+}
+
+
+  .c_te-logo--massive {
+    font-size: 17.5em;
+
+    @include desktop {
+      font-size: 25em;
+    }
+  }

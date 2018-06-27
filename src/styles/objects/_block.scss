@@ -1,0 +1,47 @@
+/**
+ * Styling for layout object blocks
+ */
+
+.o_block {
+  @include last-mb-0;
+     padding-top: $size-4;
+  padding-bottom: $size-4;
+
+  @include tablet {
+       padding-top: $size-3;
+    padding-bottom: $size-3;
+  }
+}
+
+.o_block--small {
+     padding-top: $size-7;
+  padding-bottom: $size-7;
+
+  @include tablet {
+       padding-top: $size-6;
+    padding-bottom: $size-6;
+  }
+}
+
+.o_block--large {
+     padding-top: $size-1;
+  padding-bottom: $size-1;
+
+  @include tablet {
+       padding-top: $size-1 * 1.33;
+    padding-bottom: $size-1 * 1.33;
+  }
+}
+
+.o_block--spacious {
+     padding-top: $size-1 * 1.5;
+  padding-bottom: $size-1 * 1.5;
+
+  @include tablet {
+       padding-top: $size-1 * 3;
+    padding-bottom: $size-1 * 3;
+  }
+}
+
+.o_block--top { padding-bottom: 0; }
+.o_block--bottom { padding-top: 0; }

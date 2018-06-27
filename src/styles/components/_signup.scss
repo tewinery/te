@@ -1,0 +1,14 @@
+.c_signup {
+  display: flex;
+  width: 100%;
+}
+
+
+  .c_signup__input {
+    flex: 1 1 auto;
+    font-family: $family-brown;
+    padding-left: 1em;
+    margin-right: $size-7;
+    font-size: $size-6;
+    min-width: 0px;
+  }

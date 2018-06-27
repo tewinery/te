@@ -1,0 +1,111 @@
+/**
+ * Hamburger component
+ *
+ * Styles ripped from Jonathan Suh's great work:
+ * https://jonsuh.com/hamburgers/
+ *
+ * Using type 'squeeze'
+ */
+
+$local-vars: (
+  'hamburger-layer-width': 1em,
+  'hamburger-layer-height': 0.1em,
+  'hamburger-layer-spacing': 0.3em,
+);
+
+
+.c_hamburger {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  transition: all linear 0.15s;
+
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+
+  &.is-toggled {
+    background-color: tpo-color(greyscale, white);
+    color: tpo-color(blue, darker);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+
+  .c_hamburger__box {
+    width: local-var(hamburger-layer-width);
+    height: local-var(hamburger-layer-height) * 3 + local-var(hamburger-layer-spacing) * 2;
+    display: inline-block;
+    position: relative;
+  }
+
+
+    .c_hamburger__inner {
+      display: block;
+      top: 50%;
+      margin-top: local-var(hamburger-layer-height) / -2;
+      transition-duration: 0.075s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      &,
+      &::before,
+      &::after {
+        width: local-var(hamburger-layer-width);
+        height: local-var(hamburger-layer-height);
+        background-color: currentColor;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+      }
+
+      &::before {
+        top: (local-var(hamburger-layer-spacing) + local-var(hamburger-layer-height)) * -1;
+        transition: top 0.075s 0.12s ease,
+                    opacity 0.075s ease;
+      }
+
+      &::after {
+        bottom: (local-var(hamburger-layer-spacing) + local-var(hamburger-layer-height)) * -1;
+        transition: bottom 0.075s 0.12s ease,
+                    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+
+      .c_hamburger.is-toggled & {
+        transform: rotate(45deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &::before {
+          top: 0;
+          opacity: 0;
+          transition: top 0.075s ease,
+                      opacity 0.075s 0.12s ease;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-90deg);
+          transition: bottom 0.075s ease,
+                      transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+      }
+    }

@@ -1,0 +1,48 @@
+/**
+ * Bookend object
+ *
+ * Adds stylistic bookend style lines to content sections
+ */
+
+.o_bookend {
+  position: relative;
+  margin-left: $size-3;
+  margin-right: $size-3;
+}
+
+
+  .o_bookend__left,
+  .o_bookend__right {
+    @include tablet {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 50px;
+      width: 1px;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: currentColor;
+
+      &::before {
+        content: '';
+        position: relative;
+        top: 50%;
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: currentColor;
+      }
+    }
+  }
+
+  .o_bookend__left {
+    left: -$size-4;
+
+    &::before {
+      right: 100px;
+    }
+  }
+
+  .o_bookend__right {
+    right: -$size-4;
+  }

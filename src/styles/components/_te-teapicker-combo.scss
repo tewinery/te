@@ -1,0 +1,12 @@
+/**
+ * Te teapicker component
+ */
+
+.c_te-teapicker-combo {
+  width: auto;
+  font-size: 20em;
+
+  @include desktop {
+    font-size: 22em;
+  }
+}

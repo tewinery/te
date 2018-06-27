@@ -1,0 +1,91 @@
+/**
+ * Card component
+ *
+ * 1) Necessary to include an inner component to stop IE from overflowing its
+ * width.
+ */
+
+.c_card {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark;
+
+  @include desktop {
+    &::before {
+      content: "";
+      float: left;
+      padding-bottom: 100%;
+    }
+
+    &::after {
+      clear: left;
+      content: " ";
+      display: table;
+    }
+  }
+
+  [data-in-viewport] & {
+    opacity: 0;
+  }
+
+  .in-viewport & {
+    animation-duration: 2s;
+    animation-name: slide-up;
+    animation-fill-mode: forwards;
+  }
+
+  .column:first-child & {
+    .in-viewport & {
+      animation-delay: 0;
+    }
+  }
+
+  .column:nth-child(2) & {
+    .in-viewport & {
+      animation-delay: 0.25s;
+    }
+  }
+
+  .column:nth-child(3) & {
+    .in-viewport & {
+      animation-delay: 0.5s;
+    }
+  }
+
+  .column:nth-child(4) & {
+    .in-viewport & {
+      animation-delay: 0.75s;
+    }
+  }
+}
+
+
+  .c_card__inner { /* [2] */
+    @include last-mb-0;
+    padding: $size-4 $size-7 $size-2;
+
+    @include tablet {
+      padding: $size-4 $size-7 $size-2;
+    }
+  }
+
+
+  .c_card__main {
+    position: relative;
+    padding-bottom: $size-4;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      height: 1px;
+      width: 35px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: currentColor;
+    }
+  }
