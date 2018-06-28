@@ -1,17 +1,47 @@
 <template>
-  <div class="columns is-centered">
-    <div class="column">
-      <div id='product-component-f227cf53a44' style="display: inline-block; margin-top: -20px;"></div>
+  <div>
+    <div class="columns is-centered">
+      <div class="column">
+        <button @click.prevent="showModal" class="button is-large">Buy our wines</button>
+      </div>
     </div>
+    <modal v-if="modalIsVisible" @close="closeModal">
+      <div slot="body">
+        <div id="collection-component-c870a54ecce"></div>
+        <LoadingSpinner v-if="!shopifyReady" />
+      </div>
+    </modal>
   </div>
 </template>
 
 <script>
+  import LoadingSpinner from '@/components/LoadingSpinner';
+  import Modal from '@/components/Modal';
+
   export default {
     name: 'BuyButton',
 
-    mounted() {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    components: { LoadingSpinner, Modal },
+
+    data() {
+      return {
+        modalIsVisible: false,
+        shopifyReady: false,
+      }
+    },
+
+    methods: {
+      closeModal() {
+        this.modalIsVisible = false;
+      },
+
+      showModal() {
+        this.shopifyReady = false;
+        this.modalIsVisible = true;
+        const that = this;
+
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
         if (window.ShopifyBuy) {
           if (window.ShopifyBuy.UI) {
             ShopifyBuyInit();
@@ -37,211 +67,230 @@
             appId: '6',
           });
 
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
-              id: [1605335515254],
-              node: document.getElementById('product-component-f227cf53a44'),
+          ShopifyBuy.UI.onReady(client).then((ui) => {
+            that.shopifyReady = true;
+
+            ui.createComponent('collection', {
+              id: 69009801334,
+              node: document.getElementById('collection-component-c870a54ecce'),
               moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
               options: {
                 "product": {
-                  "buttonDestination": "checkout",
-          "variantId": "all",
-          "width": "240px",
-          "contents": {
-            "img": false,
-            "imgWithCarousel": false,
-            "title": false,
-            "variantTitle": false,
-            "price": false,
-            "description": false,
-            "buttonWithQuantity": false,
-            "quantity": false
-          },
-          "text": {
-            "button": "Buy our wines"
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px"
+                  "variantId": "all",
+                  "contents": {
+                    "imgWithCarousel": false,
+                    "variantTitle": false,
+                    "description": false,
+                    "buttonWithQuantity": false,
+                    "quantity": false
+                  },
+                  "styles": {
+                    "button": {
+                      "font-size": "12px",
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "padding-top": "15px",
+                      "padding-bottom": "15px",
+                      "padding-left": "30px",
+                      "padding-right": "30px",
+                      "letter-spacing": "0.2em",
+                      "text-transform": "uppercase",
+                      "background-color": "#51545D",
+                      "color": "#ffffff",
+                      ":hover": {
+                        "background-color": "#4b4e56",
+                        "color": "#fff",
+                      },
+                      "border-radius": "4px",
+                      ":focus": {
+                        "background-color": "#4b4e56"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "variantTitle": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "title": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "description": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "price": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "compareAt": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(33.33333% - 30px)",
+                        "margin-left": "30px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "variantTitle": {
+                      "font-weight": "bold"
+                    },
+                    "title": {
+                      "font-family": "PT Serif, serif",
+                      "font-weight": "normal",
+                      "font-size": "20px"
+                    },
+                    "description": {
+                      "font-weight": "bold"
+                    },
+                    "price": {
+                      "font-size": "20px",
+                      "font-weight": "bold"
+                    },
+                    "compareAt": {
+                      "font-size": "17px",
+                      "font-family": "Helvetica Neue, sans-serif",
+                      "font-weight": "bold"
+                    }
+                  },
+                  "googleFonts": [
+                    "PT Serif"
+                  ]
+                },
+                "cart": {
+                  "contents": {
+                    "button": true
+                  },
+                  "styles": {
+
+                    "button": {
+                      "font-size": "12px",
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "padding-top": "15px",
+                      "padding-bottom": "15px",
+                      "padding-left": "30px",
+                      "padding-right": "30px",
+                      "letter-spacing": "0.2em",
+                      "text-transform": "uppercase",
+                      "background-color": "#51545D",
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      ":hover": {
+                        "background-color": "#4b4e56"
+                      },
+                      "border-radius": "4px",
+                      ":focus": {
+                        "background-color": "#4b4e56"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "footer": {
+                      "background-color": "#ffffff"
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "variantTitle": false,
+                    "buttonWithQuantity": true,
+                    "button": false,
+                    "quantity": false
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "background-color": "#51545D",
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "padding-left": "20px",
+                      "padding-right": "20px",
+                      ":hover": {
+                        "background-color": "#4b4e56"
+                      },
+                      "border-radius": "4px",
+                      ":focus": {
+                        "background-color": "#4b4e56"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "variantTitle": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "title": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "description": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "price": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "compareAt": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "font-weight": "normal"
+                    }
+                  }
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                      "background-color": "#51545D",
+                      ":hover": {
+                        "background-color": "#4b4e56"
+                      },
+                      ":focus": {
+                        "background-color": "#4b4e56"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "count": {
+                      "color": "#ffffff",
+                      ":hover": {
+                        "color": "#ffffff"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#ffffff"
+                    }
+                  }
+                },
+                "option": {
+                  "styles": {
+                    "label": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                    },
+                    "select": {
+                      "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
+                    }
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-30px"
+                      }
+                    }
+                  }
+                },
               }
-            },
-            "button": {
-              "font-size": "12px",
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "padding-top": "26px",
-              "padding-bottom": "26px",
-              "padding-left": "36px",
-              "padding-right": "36px",
-              "letter-spacing": "0.2em",
-              "text-transform": "uppercase",
-              "border": "1px solid #51545D",
-              "background-color": "transparent",
-              "color": "#51545D",
-              ":hover": {
-                "background-color": "#4b4e56",
-                "color": "#fff",
-              },
-              "border-radius": "4px",
-              ":focus": {
-                "background-color": "#4b4e56"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            }
-          }
-        },
-        "cart": {
-          "contents": {
-            "button": true
-          },
-          "styles": {
-            "button": {
-              "font-size": "12px",
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "padding-top": "15px",
-              "padding-bottom": "15px",
-              "padding-left": "30px",
-              "padding-right": "30px",
-              "letter-spacing": "0.2em",
-              "text-transform": "uppercase",
-              "background-color": "#51545D",
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              ":hover": {
-                "background-color": "#4b4e56"
-              },
-              "border-radius": "4px",
-              ":focus": {
-                "background-color": "#4b4e56"
-              },
-              "font-weight": "normal"
-            },
-            "footer": {
-              "background-color": "#ffffff"
-            }
-          }
-        },
-        "modalProduct": {
-          "contents": {
-            "img": false,
-            "imgWithCarousel": true,
-            "variantTitle": false,
-            "buttonWithQuantity": true,
-            "button": false,
-            "quantity": false
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "100%",
-                "margin-left": "0px",
-                "margin-bottom": "0px"
-              }
-            },
-            "button": {
-              "background-color": "#51545D",
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "padding-left": "20px",
-              "padding-right": "20px",
-              ":hover": {
-                "background-color": "#4b4e56"
-              },
-              "border-radius": "4px",
-              ":focus": {
-                "background-color": "#4b4e56"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "font-weight": "normal"
-            }
-          }
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-              "background-color": "#51545D",
-              ":hover": {
-                "background-color": "#4b4e56"
-              },
-              ":focus": {
-                "background-color": "#4b4e56"
-              },
-              "font-weight": "normal"
-            },
-            "count": {
-              "color": "#ffffff",
-              ":hover": {
-                "color": "#ffffff"
-              }
-            },
-            "iconPath": {
-              "fill": "#ffffff"
-            }
-          }
-        },
-        "option": {
-          "styles": {
-            "label": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-            },
-            "select": {
-              "font-family": "Lato, Brown, Helvetica Neue, Helvetica, Arial, sans-serif",
-            }
-          }
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
+            })
+          })
         }
-      }
-            });
-          });
-        }
+      },
     },
   }
 </script>

@@ -20,7 +20,7 @@
           <div class="c_card has-background-white-bis">
             <div class="c_card__inner">
               <h3 class="subtitle">Step two</h3>
-              <p class="c_card__main">Our tea is then sweetened and yeast added to it</p>
+              <p class="c_card__main">Our tea is sweetened and yeast added to it</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
           <div class="c_card has-background-white-bis">
             <div class="c_card__inner">
               <h3 class="subtitle">Step four</h3>
-              <p class="c_card__main">Sweetness is adjusted to compliment the complex flavours of each tea</p>
+              <p class="c_card__main">Sweetness is adjusted to compliment the complex flavour of each tea</p>
             </div>
           </div>
         </div>

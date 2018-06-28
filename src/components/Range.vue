@@ -26,14 +26,14 @@
               aroma likened to that of the Muscatel grape.
             </p>
             <p class="is-size-5">
-              We specifically source our Darjeeling from the Mim Estate, which is
-              nestled in the foothills of the Himalayan Mountains, in
+              We specifically source our Darjeeling from the Mim Estate, which
+              is nestled in the foothills of the Himalayan Mountains, in
               the Indian State of West Bengal, at an elevation of 6,700 feet.
             </p>
             <p class="is-size-5">
-              It is a government owned tea garden, which produces a finest,
-              tippy, golden, flowery, orange, pekoe leaf, or in-short an
-              FTGFOP-1.
+              The Mim Estate is a government owned tea garden, which produces a
+              finest, tippy, golden, flowery, orange, pekoe leaf, or in-short
+              an FTGFOP-1.
             </p>
             <p class="is-size-5">
               As a wine Té Darjeeling pairs well with coriander, cardamom and

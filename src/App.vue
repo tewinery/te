@@ -1,10 +1,14 @@
 <template>
   <div id="app" class="c_app has-background-white-bis">
-    <modal v-if="showModal" @close="acceptOver18">
-      <p slot="body">
-        Té Wines advocates responsible alcohol consumption. This website is
-        intended exclusively for persons who are of legal age
-      </p>
+    <modal modal-mask-class="is-opaque" v-if="showModal" @close="acceptOver18">
+      <div slot="body">
+        <p>Té Winery advocates responsible alcohol consumption</p>
+        <p>This website is only for persons of legal age</p>
+        <p>Please confirm to continue:</p>
+      </div>
+      <span slot="footer">
+        I am over 18 years of age
+      </span>
     </modal>
     <router-view/>
     <vue-cookie-accept-decline
