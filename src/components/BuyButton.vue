@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="columns is-centered">
-      <div class="column">
-        <button @click.prevent="showModal" class="button is-large">Buy our wines</button>
-      </div>
-    </div>
     <modal v-if="modalIsVisible" @close="closeModal">
       <div slot="body">
         <div id="collection-component-c870a54ecce"></div>
         <LoadingSpinner v-if="!shopifyReady" />
       </div>
     </modal>
+    <div class="columns is-centered">
+      <div class="column">
+        <button @click.prevent="showModal" class="button is-large">Buy our wines</button>
+      </div>
+    </div>
   </div>
 </template>
 
