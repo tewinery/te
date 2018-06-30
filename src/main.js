@@ -27,6 +27,8 @@ Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline)
 
 Vue.config.productionTip = false;
 
+window.Vue = Vue;
+
 /* eslint-disable no-new */
 new Vue({
   router,

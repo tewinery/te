@@ -42,15 +42,17 @@
 
         var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
 
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
+        Vue.nextTick(() => {
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
           } else {
             loadScript();
           }
-        } else {
-          loadScript();
-        }
+        });
 
         function loadScript() {
           var script = document.createElement('script');

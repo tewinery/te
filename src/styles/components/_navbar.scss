@@ -4,6 +4,8 @@
  * 1) Hack to make sure there's not a sub-pixel gap between the sidebar and the
  * main content (which occurs due to using viewport units to calculate width
  * and transform)
+ * 2) When not shown, hide the sidebar, so on iOS the elastic pull at the
+ * top/bottom of the website won't show the sidebar hiding underneath
  */
 
 .c_navbar {
@@ -63,6 +65,14 @@
     text-align: center;
     background-color: $blue;
     color: $text-light;
+
+    opacity: 0; /* [2] */
+    transition: all 0s te-transition-speed(medium) ease; /* [2] */
+
+    .is-sidebar-toggled & {
+      opacity: 1; /* [2] */
+      transition: none; /* [2] */
+    }
 
     @include tablet {
       width: calc(50vw + 2px);
