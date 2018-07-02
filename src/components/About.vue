@@ -20,7 +20,7 @@
           <div class="column is-two-thirds-tablet is-half-desktop">
             <div class="o_block o_block--bottom">
               <img
-                src="../assets/images/te-7.jpg"
+                src="../assets/images/te-9.jpg"
                 alt="The adventure begins"
               />
             </div>
