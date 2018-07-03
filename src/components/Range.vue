@@ -52,10 +52,6 @@
               class="c_details__image"
             />
             <div class="c_details__content">
-              <svgicon
-                name="from-the-mim-estate"
-                class="c_svg-icon--6x c_details__icon">
-              </svgicon>
               <div class="o_circle">
                 <div class="o_circle__content">
                   <h3 class="subtitle">Good to know</h3>
@@ -70,10 +66,6 @@
                   </p>
                 </div>
               </div>
-              <svgicon
-                name="enjoy-our-wine-chilled"
-                class="c_svg-icon--6x c_details__icon">
-              </svgicon>
             </div>
           </div>
         </div>
