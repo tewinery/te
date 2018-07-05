@@ -24,6 +24,8 @@
         <div class="slide slide--3"></div>
         <div class="slide slide--4"></div>
         <div class="slide slide--5"></div>
+        <div class="slide slide--6"></div>
+        <div class="slide slide--7"></div>
     </agile>
   </section>
 </template>

@@ -84,22 +84,6 @@
 
         <BuyButton />
       </div>
-
-      <div class="columns is-centered">
-        <div class="column is-two-thirds-tablet">
-          <div id="purchase">
-            <div class="o_block o_block--bottom">
-              <h3 class="subtitle" style="max-width:320px">How do I become a stockist?</h3>
-            </div>
-          </div>
-
-          <p>
-            Drop us an <a href="mailto:hello@tewinery.com">email</a> with some
-            information about your business, so that we can connect you to the
-            right member of our team
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 </template>

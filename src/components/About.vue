@@ -35,6 +35,9 @@
                 Té is a range of six unique wines made from six unique teas
                 grown in six unique places
               </p>
+              <p class="is-size-3">
+                Darjeeling is our first and the others will follow&nbsp;soon
+              </p>
             </div>
           </div>
         </div>
