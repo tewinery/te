@@ -36,7 +36,7 @@
                 grown in six unique places
               </p>
               <p class="is-size-3">
-                Darjeeling is our first and the others will follow&nbsp;soon
+                Darjeeling is our first and the others will follow&nbsp;shortly
               </p>
             </div>
           </div>

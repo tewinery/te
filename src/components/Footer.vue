@@ -1,9 +1,11 @@
 <template>
   <div id="contact" class="has-background-white-bis">
-    <div class="o_block o_block--large">
-      <div class="columns has-text-centered">
-        <div class="column">
-          <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>
+    <div class="o_block o_block--top">
+      <div class="o_block o_block--large o_block--bottom">
+        <div class="columns has-text-centered">
+          <div class="column">
+            <svgicon name="te-tagline" class="c_te-tagline c_te-tagline--massive"></svgicon>
+          </div>
         </div>
       </div>
     </div>
