@@ -7,11 +7,15 @@ import VueParallaxJs from 'vue-parallax-js';
 import VueAgile from 'vue-agile';
 import VueCookieAcceptDecline from 'vue-cookie-accept-decline';
 import VueCookie from 'vue-cookie';
+import VueAnalytics from 'vue-analytics'
 import * as svgicon from 'vue-svgicon';
 import 'vue-svgicon/dist/polyfill';
 
 import App from './App';
 import router from './router';
+
+window.VueAnalytics = VueAnalytics;
+window.router = router;
 
 Vue.use(VueScrollTo, { duration: 1000 });
 Vue.use(VueParallaxJs);

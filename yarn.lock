@@ -5928,6 +5928,10 @@ vue-agile@^0.3.7:
   dependencies:
     vue "2.*.*"
 
+vue-analytics@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.12.2.tgz#6318be3cfa0ce7fa6b00cb8a9fcd42268e75fab8"
+
 vue-cookie-accept-decline@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/vue-cookie-accept-decline/-/vue-cookie-accept-decline-1.0.9.tgz#1b250667a93275757cc845fea48beefb05bfcd9f"

@@ -17,7 +17,9 @@
       :disableDecline="false"
       :transitionName="'slideFromBottom'"
       :acceptText="'Got It'"
-      :declineText="'Opt Out'">
+      :declineText="'Opt Out'"
+      @clickedAccept="cookieClickedAccept"
+      @status="cookieStatus">
       <div slot="message">
           We use cookies to ensure you get the best experience on our website.
           <!--<a href="https://cookiesandyou.com/" target="_blank">Learn More...</a>-->
@@ -50,6 +52,25 @@
       acceptOver18() {
         this.showModal = false;
         this.$cookie.set('acceptOver18', true, { expires: '1Y' });
+      },
+
+      cookieStatus(status) {
+        if (status == "accept") {
+          this.setupGoogleAnalytics();
+        }
+      },
+
+      cookieClickedAccept() {
+        this.setupGoogleAnalytics();
+      },
+
+      setupGoogleAnalytics() {
+        Vue.use(VueAnalytics, {
+          id: 'UA-122016847-1',
+          router,
+          checkDuplicatedScript: true
+        });
+        console.log("setupGoogleAnalytics");
       },
     },
 
