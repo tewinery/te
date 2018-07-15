@@ -36,7 +36,7 @@
                 grown in six unique places
               </p>
               <p class="is-size-3">
-                Mim Darjeeling is our first and others will follow&nbsp;shortly
+                Mim Darjeeling is our first and others will follow&nbsp;soon
               </p>
             </div>
           </div>
