@@ -31,13 +31,13 @@
               the Indian State of West Bengal, at an elevation of 6,700 feet.
             </p>
             <p class="is-size-5">
-              The Mim Estate is a government owned tea garden, which produces a
-              finest, tippy, golden, flowery, orange, pekoe leaf, or in-short
+              The Mim Estate is a government-owned tea garden, which produces a
+              finest, tippy, golden, flowery, orange, pekoe leaf, or in short
               an FTGFOP-1.
             </p>
             <p class="is-size-5">
               As a wine Té Darjeeling pairs well with coriander, cardamom and
-              fish based dishes, or it can be served chilled as an aperitif.
+              fish-based dishes, or it can be served chilled as an aperitif.
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@
               <h2 class="subtitle">About</h2>
 
               <p class="is-size-3">
-                Té wines was founded by Ross Kenyon who has roots that go back to the
+                Té Wine was founded by Ross Kenyon who has roots that go back to the
                 industrial heartlands of Yorkshire, where tea is more than a
                 drink, it’s a way of life
               </p>

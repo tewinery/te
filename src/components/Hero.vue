@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <agile :arrows="false" :dots="false" :speed="1500" :autoplaySpeed="5500"
+    <agile :arrows="false" :dots="false" :speed="1000" :autoplaySpeed="5000"
         :timing="'linear'" :fade="true"
         :autoplay="true" :pauseOnHover="false" class="c_hero__bg">
         <div class="slide slide--1"></div>
@@ -25,7 +25,6 @@
         <div class="slide slide--4"></div>
         <div class="slide slide--5"></div>
         <div class="slide slide--6"></div>
-        <div class="slide slide--7"></div>
     </agile>
   </section>
 </template>
