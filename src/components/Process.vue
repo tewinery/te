@@ -28,7 +28,7 @@
           <div class="c_card has-background-light">
             <div class="c_card__inner">
               <h3 class="subtitle">Step three</h3>
-              <p class="c_card__main">Our tea undergoes a temperature controlled fermentation</p>
+              <p class="c_card__main">Our tea undergoes a temparature-controlled fermentation</p>
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@
         <div class="column is-two-thirds-desktop is-half-desktop">
           <p class="is-size-3">
             Our wines are made in small batches using state-of-the-art
-            equipment, which regulates the temparature-controlled fermentation
-            and minimises dissolved oxygen pickup
+            equipment, which regulates the fermentation and minimises dissolved
+            oxygen pickup
           </p>
 
           <p class="is-size-3">
