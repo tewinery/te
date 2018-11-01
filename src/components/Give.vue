@@ -5,7 +5,7 @@
       <div class="columns is-marginless is-centered">
         <div class="column is-two-thirds-desktop is-half-desktop">
           <p class="is-size-3">
-            Té Wine give ten percent of their profits to support eye care in the tea producing nations
+            We give ten percent of our profits to support eye care in the tea producing nations
           </p>
         </div>
       </div>
