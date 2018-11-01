@@ -37,7 +37,7 @@
             </p>
             <p class="is-size-5">
               As a wine Té Darjeeling pairs well with coriander, cardamom and
-              fish-based dishes, or it can be served chilled as an aperitif.
+              fish-based dishes, or serve chilled as an aperitif.
             </p>
           </div>
         </div>
@@ -73,16 +73,14 @@
 
       <div id="purchase" class="o_block o_block--large">
         <div class="o_block o_block--bottom">
-          <h3 class="subtitle">Shop</h3>
+          <h3 class="subtitle">Retail</h3>
         </div>
 
         <div class="o_block o_block--bottom">
-          <p class="is-size-3">
-            We ship Wednesday for a Friday delivery
+          <p class="is-size-4">
+            To become a stockist please contact us at: <a href="mailto:hello@tewinery.com">hello@tewinery.com</a>
           </p>
         </div>
-
-        <BuyButton />
       </div>
     </div>
   </section>
@@ -92,12 +90,9 @@
   import '@/icons/from-the-mim-estate';
   import '@/icons/enjoy-our-wine-chilled';
   import '@/icons/te-teapicker-darjeeling-combo';
-  import BuyButton from '@/components/BuyButton';
 
   export default {
     name: 'Range',
-
-    components: { BuyButton },
 
     methods: {
       resizeRetinaImage(ref) {
