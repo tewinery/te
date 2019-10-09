@@ -17,7 +17,7 @@
               <p>
                 The Peaks
                 <span class="is-font-playfair">&amp;</span>
-                Otter (Drinks) Co. Ltd
+                Otter (Drinks) Company
               </p>
             </div>
             <div class="column u_last-mb-0">
@@ -56,7 +56,7 @@
               <p>
                 &copy; The Peaks
                 <span class="is-font-playfair">&amp;</span>
-                Otter (Drinks) Co. Ltd
+                Otter (Drinks) Company
                 {{ (new Date()).getFullYear() }}
               </p>
             </div>

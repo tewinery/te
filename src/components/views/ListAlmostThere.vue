@@ -12,7 +12,7 @@
               <p>To complete the subscription process, please click the link in the email we just sent you.</p>
 
               <p class="is-size-5">
-                The Peaks &amp; Otter (Drinks) Co. Ltd<br>
+                The Peaks &amp; Otter (Drinks) Company<br>
                 85 Great Portland Street<br>
                 First Floor<br>
                 London, W1W 7LT<br>
