@@ -5,7 +5,6 @@
       <Hero />
       <About />
       <Process />
-      <Give />
       <Range />
       <Footer />
     </div>
@@ -26,14 +25,13 @@
   import Sidebar from '@/components/Sidebar';
   import About from '@/components/About';
   import Hero from '@/components/Hero';
-  import Give from '@/components/Give';
   import Process from '@/components/Process';
   import Range from '@/components/Range';
 
   export default {
     name: 'Home',
 
-    components: { Navbar, Footer, Hamburger, Sidebar, About, Hero, Give, Process, Range },
+    components: { Navbar, Footer, Hamburger, Sidebar, About, Hero, Process, Range },
 
     data() {
       return {
